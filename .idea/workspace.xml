@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="REFACTORING: Removed impl package.">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Added and implemented the Faculty entity.">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Faculty.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +139,7 @@
     <MESSAGE value="TASK: Added application description." />
     <MESSAGE value="TASK: Added uml image inside the README.md." />
     <MESSAGE value="REFACTORING: Removed impl package." />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTORING: Removed impl package." />
+    <MESSAGE value="TASK: Added and implemented the Faculty entity." />
+    <option name="LAST_COMMIT_MESSAGE" value="TASK: Added and implemented the Faculty entity." />
   </component>
 </project>
