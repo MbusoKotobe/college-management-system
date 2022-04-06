@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public interface IRepository <T, I>
 {
-    T add(T object);
-    T get(I id);
+    T create(T object);
+    T read(I id);
     T update(T object);
-    boolean remove(I id);
+    boolean delete(I id);
 }
