@@ -1,6 +1,12 @@
 # College Management System
+This is an application for managing 
+student, courses and lecturer's information.
 
-## Commit Messages
+
+## Collaboration Rules
+---
+
+### Commit Messages
 All commits made in this project should follow the convention below.
 A commit should have 3 parts
 1. Type
