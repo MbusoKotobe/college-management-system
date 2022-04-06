@@ -17,7 +17,7 @@ A commit should have 3 parts
 2. Colon
 3. Description of the task under the give task. ***Short and precised***
 
-#### See exmaples below
+#### See examples below
 ---
 > A commit for a newly added entity
 `TASK: Added and implemented domain entity car.`

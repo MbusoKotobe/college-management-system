@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Added uml image inside the README.md.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/impl/DepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/DepartmentRepositoryImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/impl/FacultyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/FacultyRepositoryImpl.java" afterDir="false" />
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="REFACTORING: Removed impl package.">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649234686735</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="REFACTORING: Removed impl package.">
+      <created>1649236906153</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649236906153</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +134,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="TASK: Added application description." />
     <MESSAGE value="TASK: Added uml image inside the README.md." />
-    <option name="LAST_COMMIT_MESSAGE" value="TASK: Added uml image inside the README.md." />
+    <MESSAGE value="REFACTORING: Removed impl package." />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTORING: Removed impl package." />
   </component>
 </project>
