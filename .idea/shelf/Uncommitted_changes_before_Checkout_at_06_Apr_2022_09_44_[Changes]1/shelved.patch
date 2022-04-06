@@ -1,0 +1,24 @@
+Index: src/main/java/za/ac/cput/impl/FacultyRepository.java
+===================================================================
+diff --git a/src/main/java/za/ac/cput/impl/FacultyRepository.java b/src/main/java/za/ac/cput/impl/FacultyRepository.java
+deleted file mode 100644
+--- a/src/main/java/za/ac/cput/impl/FacultyRepository.java	
++++ /dev/null	
+@@ -1,5 +0,0 @@
+-package za.ac.cput.impl;
+-
+-public class FacultyRepository
+-{
+-}
+Index: src/main/java/za/ac/cput/repository/impl/FacultyRepository.java
+===================================================================
+diff --git a/src/main/java/za/ac/cput/repository/impl/FacultyRepository.java b/src/main/java/za/ac/cput/repository/impl/FacultyRepository.java
+new file mode 100644
+--- /dev/null	
++++ b/src/main/java/za/ac/cput/repository/impl/FacultyRepository.java	
+@@ -0,0 +1,5 @@
++package za.ac.cput.repository.impl;
++
++public class FacultyRepository
++{
++}
