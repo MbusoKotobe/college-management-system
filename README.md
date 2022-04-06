@@ -2,7 +2,11 @@
 This is an application for managing 
 student, courses and lecturer's information.
 
+---
+## System's UML Diagram
+![College System UML Diagram!](uml/ADP_Assignment_Group_1.png "College System UML Diagram")
 
+---
 ## Collaboration Rules
 ---
 
