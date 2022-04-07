@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="REFACTORING: Removed impl package.">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented FacultyFactory.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +114,28 @@
       <option name="project" value="LOCAL" />
       <updated>1649236906153</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="TASK: Added and implemented the Faculty entity.">
+      <created>1649252502719</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649252502719</updated>
+    </task>
+    <task id="LOCAL-00007" summary="REFACTORING: Fixed department spelling error.">
+      <created>1649252571972</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649252571972</updated>
+    </task>
+    <task id="LOCAL-00008" summary="TASK: Implemented FacultyFactory.">
+      <created>1649253584850</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649253584850</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +157,9 @@
     <MESSAGE value="TASK: Added application description." />
     <MESSAGE value="TASK: Added uml image inside the README.md." />
     <MESSAGE value="REFACTORING: Removed impl package." />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTORING: Removed impl package." />
+    <MESSAGE value="TASK: Added and implemented the Faculty entity." />
+    <MESSAGE value="REFACTORING: Fixed department spelling error." />
+    <MESSAGE value="TASK: Implemented FacultyFactory." />
+    <option name="LAST_COMMIT_MESSAGE" value="TASK: Implemented FacultyFactory." />
   </component>
 </project>
