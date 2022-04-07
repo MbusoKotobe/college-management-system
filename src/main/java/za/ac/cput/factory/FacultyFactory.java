@@ -7,7 +7,7 @@ public class FacultyFactory
     public static Faculty createFaculty(String facultyName, String facultyDescription)
     {
         return new Faculty.Builder().setFacultyName(facultyName)
-                                    .setFacultyDescription(facultyDescription)
-                                    .build();
+                .setFacultyDescription(facultyDescription)
+                .build();
     }
 }
