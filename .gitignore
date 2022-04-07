@@ -1,1 +1,4 @@
+# Files and folders to be ignored by GIT.
+
 /.idea/workspace.xml
+.DS_Store
