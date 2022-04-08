@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="">
+=======
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented Department Factory.">
+>>>>>>> da80f2bca47c64af866b86561c6715a35967d178
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -77,7 +82,11 @@
       <updated>1649177095211</updated>
       <workItem from="1649177096985" duration="5592000" />
       <workItem from="1649230156405" duration="335000" />
+<<<<<<< HEAD
       <workItem from="1649354278719" duration="3752000" />
+=======
+      <workItem from="1649360725316" duration="660000" />
+>>>>>>> da80f2bca47c64af866b86561c6715a35967d178
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1649181653364</created>
@@ -114,6 +123,7 @@
       <option name="project" value="LOCAL" />
       <updated>1649236906153</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00006" summary="A commit for a newly added entity TASK: Added Lecturer and LecturerDepartment entities">
       <created>1649357251496</created>
       <option name="number" value="00006" />
@@ -122,6 +132,37 @@
       <updated>1649357251496</updated>
     </task>
     <option name="localTasksCounter" value="7" />
+=======
+    <task id="LOCAL-00006" summary="TASK: Added and implemented the Faculty entity.">
+      <created>1649252502719</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649252502719</updated>
+    </task>
+    <task id="LOCAL-00007" summary="REFACTORING: Fixed department spelling error.">
+      <created>1649252571972</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649252571972</updated>
+    </task>
+    <task id="LOCAL-00008" summary="TASK: Implemented FacultyFactory.">
+      <created>1649253584850</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649253584850</updated>
+    </task>
+    <task id="LOCAL-00009" summary="TASK: Implemented Department Factory.">
+      <created>1649255111538</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649255111538</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+>>>>>>> da80f2bca47c64af866b86561c6715a35967d178
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,7 +184,15 @@
     <MESSAGE value="TASK: Added application description." />
     <MESSAGE value="TASK: Added uml image inside the README.md." />
     <MESSAGE value="REFACTORING: Removed impl package." />
+<<<<<<< HEAD
     <MESSAGE value="A commit for a newly added entity TASK: Added Lecturer and LecturerDepartment entities" />
     <option name="LAST_COMMIT_MESSAGE" value="A commit for a newly added entity TASK: Added Lecturer and LecturerDepartment entities" />
+=======
+    <MESSAGE value="TASK: Added and implemented the Faculty entity." />
+    <MESSAGE value="REFACTORING: Fixed department spelling error." />
+    <MESSAGE value="TASK: Implemented FacultyFactory." />
+    <MESSAGE value="TASK: Implemented Department Factory." />
+    <option name="LAST_COMMIT_MESSAGE" value="TASK: Implemented Department Factory." />
+>>>>>>> da80f2bca47c64af866b86561c6715a35967d178
   </component>
 </project>

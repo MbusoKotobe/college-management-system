@@ -1,4 +1,10 @@
 package za.ac.cput.entity;
+/**
+ * LecturerDepartment.java;
+ * This is a bridging entity between Lecturer and Department domain classes
+ * @Author: Anele Aneal Tose - 216079292
+ * Date: 07 April 2022
+ */
 
 public class LecturerDepartment {
     private long lecturerId;

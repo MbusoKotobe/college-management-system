@@ -1,5 +1,12 @@
 package za.ac.cput.entity;
 
+/**
+ * Lecturer.java;
+ * This is lecturer domain class
+ * @Author: Anele Aneal Tose - 216079292
+ * Date: 07 April 2022
+ */
+
 public class Lecturer {
     private long lecturerId;
     private String firstName;
