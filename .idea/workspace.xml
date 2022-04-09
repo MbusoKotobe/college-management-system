@@ -54,7 +54,6 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -291,5 +290,6 @@
     <MESSAGE value="TASK: Implemented IDepartmentRepository.java." />
     <MESSAGE value="TASK: Implemented DepartmentRepository.java." />
     <option name="LAST_COMMIT_MESSAGE" value="TASK: Implemented DepartmentRepository.java." />
+    <option name="LAST_COMMIT_MESSAGE" value="REFACTORING: Removed impl package." />
   </component>
 </project>
