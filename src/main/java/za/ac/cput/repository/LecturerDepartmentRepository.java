@@ -1,17 +1,20 @@
 package za.ac.cput.repository;
-
+/**
+ * LecturerDepartmentRepository.java;
+ * This class implement LecturerDepartmentRepository
+ * @Author: Anele Aneal Tose - 216079292
+ * Date: 09 April 2022
+ */
 import za.ac.cput.entity.Lecturer;
 import za.ac.cput.entity.LecturerDepartment;
-
 import java.util.HashSet;
 import java.util.Set;
 
-public class LecturerDepartmentRepository {
-  /**  private static LecturerDepartmentRepository lecturerDepartmentRepository = null;
+public class LecturerDepartmentRepository implements ILecturerDepartmentRepository{
+    private static LecturerDepartmentRepository lecturerDepartmentRepository = null;
     private Set<LecturerDepartment> lecturerDepartmentDB;
-    private LecturerDepartmentRepository(){
-    lecturerDepartmentDB = new HashSet<>();
-
+    private LecturerDepartmentRepository() {
+        lecturerDepartmentDB = new HashSet<>();
     }
     public static LecturerDepartmentRepository createLectureDepartmentRepository(){
         if (lecturerDepartmentRepository == null){
@@ -23,41 +26,29 @@ public class LecturerDepartmentRepository {
     public Set<LecturerDepartment> getAll() {
         return lecturerDepartmentDB;
     }
-
     @Override
-    public LecturerDepartment create(LecturerDepartment object) {
-        lecturerDepartmentDB.add(object);
-        return object;
+    public LecturerDepartment create(LecturerDepartment lecturerDepartment) {
+        lecturerDepartmentDB.add(lecturerDepartment);
+        return lecturerDepartment;
     }
 
     @Override
-    public LecturerDepartment read(Integer id) {
-        for(LecturerDepartment lecturerDepartment:lecturerDepartmentDB){
-            if(lecturerDepartment.getLecturerId() && getDepartmentId  == id){
+    public LecturerDepartment read(long lecturerId, int departmentId) {
+        for (LecturerDepartment lecturerDepartment : lecturerDepartmentDB) {
+            if (lecturerDepartment.getDepartmentId() == departmentId &&
+                    lecturerDepartment.getLectureId() == lecturerId) {
                 return lecturerDepartment;
             }
+        }
         return null;
     }
-
     @Override
-    public LecturerDepartment update(LecturerDepartment lecturerDepartment) {
-        for (LecturerDepartment i: lecturerDepartmentDB)
-        if(i.getLecturerId() == lecturer.getLecturerId()){
-        lecturerDB.remove(i);
-        lecturerDB.add(lecturer);
-        return lecturer;
-         }
-        return null;
-        }
-
-        @Override
-        public boolean delete(Long id) {
-        for(Lecturer lecturer: lecturerDB)
-        if(lecturer.getLecturerId() == id){
-        lecturerDB.remove(lecturer);
-        return true;
-        }
-        return false;
-         }*/
-
+    public boolean delete(long lecturerId, int departmentId) {
+        LecturerDepartment lecturerDepartment = read(lecturerId,departmentId);
+        if(lecturerDepartment == null)
+            return false;
+        lecturerDepartmentDB.remove(lecturerDepartment);
+            return true;
     }
+
+}

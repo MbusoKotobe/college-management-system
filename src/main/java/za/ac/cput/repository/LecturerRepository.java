@@ -1,5 +1,10 @@
 package za.ac.cput.repository;
-
+/**
+ * LecturerRepository.java;
+ * This class implement ILecturerRepository
+ * @Author: Anele Aneal Tose - 216079292
+ * Date: 09 April 2022
+ */
 import za.ac.cput.entity.Lecturer;
 
 import java.util.HashSet;
