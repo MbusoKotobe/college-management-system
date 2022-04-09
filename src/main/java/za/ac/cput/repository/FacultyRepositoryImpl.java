@@ -7,13 +7,18 @@ import java.util.Set;
 
 public class FacultyRepositoryImpl implements IFacultyRepository
 {
-    Set<Faculty> faculties;
-    IRepository repository;
+    private Set<Faculty> faculties;
+    private static IFacultyRepository repository;
 
     public FacultyRepositoryImpl()
     {
-        repository = new FacultyRepositoryImpl();
         faculties = new HashSet<Faculty>();
+    }
+
+    public static IFacultyRepository getFacultyRepository ()
+    {
+        if (repository == null) repository = new FacultyRepositoryImpl();
+        return repository;
     }
 
     @Override
@@ -45,6 +50,7 @@ public class FacultyRepositoryImpl implements IFacultyRepository
         {
             faculties.remove(outdatedFaculty);
             faculties.add(object);
+            return object;
         }
         return null;
     }
