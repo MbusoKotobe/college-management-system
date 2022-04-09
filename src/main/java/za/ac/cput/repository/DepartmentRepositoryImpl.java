@@ -8,12 +8,17 @@ import java.util.Set;
 public class DepartmentRepositoryImpl implements IDepartmentRepository
 {
     Set<Department> departments;
-    IDepartmentRepository repository;
+    private static IDepartmentRepository repository;
 
     public DepartmentRepositoryImpl()
     {
-        repository = new DepartmentRepositoryImpl();
         departments = new HashSet<Department>();
+    }
+
+    public static IDepartmentRepository getDepartmentRepository ()
+    {
+        if (repository == null) repository = new DepartmentRepositoryImpl();
+        return repository;
     }
 
     @Override
