@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented IFacultyFactory.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/FacultyRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/FacultyRepositoryImpl.java" afterDir="false" />
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented FacultyRepositoryImpl.java.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IDepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IDepartmentRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,7 @@
       <workItem from="1649177096985" duration="5592000" />
       <workItem from="1649230156405" duration="335000" />
       <workItem from="1649360725316" duration="660000" />
-      <workItem from="1649493020609" duration="3306000" />
+      <workItem from="1649493020609" duration="3717000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1649181653364</created>
@@ -159,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649504649531</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="TASK: Implemented FacultyRepositoryImpl.java.">
+      <created>1649505999600</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1649505999600</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +193,7 @@
     <MESSAGE value="TASK: Implemented Department Factory." />
     <MESSAGE value="Removed the test entity package." />
     <MESSAGE value="TASK: Implemented IFacultyFactory." />
-    <option name="LAST_COMMIT_MESSAGE" value="TASK: Implemented IFacultyFactory." />
+    <MESSAGE value="TASK: Implemented FacultyRepositoryImpl.java." />
+    <option name="LAST_COMMIT_MESSAGE" value="TASK: Implemented FacultyRepositoryImpl.java." />
   </component>
 </project>
