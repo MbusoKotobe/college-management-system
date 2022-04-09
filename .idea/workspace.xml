@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented Department Factory.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/CourseModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CourseFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CourseModuleFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/CourseModuleRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/CourseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/ICourseModuleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/ICourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/CourseFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/CourseModuleFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/CourseModuleRepositoryImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/CourseRepositoryImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml/ADP_Assignment_Group_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/uml/ADP_Assignment_Group_1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,6 +83,95 @@
       <recent name="za.ac.cput.entity" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.CourseModuleRepositoryImplTest">
+    <configuration name="CourseModuleFactoryTest.createCourseModule" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="college-management-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.CourseModuleFactoryTest" />
+      <option name="METHOD_NAME" value="createCourseModule" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseModuleRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="college-management-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.CourseModuleRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="college-management-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.CourseRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseRepositoryImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="college-management-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.CourseRepositoryImplTest" />
+      <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseRepositoryImplTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="college-management-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.CourseRepositoryImplTest" />
+      <option name="METHOD_NAME" value="read" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CourseModuleRepositoryImplTest" />
+        <item itemvalue="JUnit.CourseRepositoryImplTest" />
+        <item itemvalue="JUnit.CourseRepositoryImplTest.read" />
+        <item itemvalue="JUnit.CourseRepositoryImplTest.create" />
+        <item itemvalue="JUnit.CourseModuleFactoryTest.createCourseModule" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -83,6 +184,7 @@
       <workItem from="1649230156405" duration="335000" />
       <workItem from="1649360725316" duration="660000" />
       <workItem from="1649364575959" duration="1086000" />
+      <workItem from="1649447565912" duration="23097000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1649181653364</created>
