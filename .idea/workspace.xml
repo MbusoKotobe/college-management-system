@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented FacultyRepositoryImpl.java.">
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IDepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IDepartmentRepository.java" afterDir="false" />
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented IDepartmentRepository.java.">
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/DepartmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/DepartmentRepositoryImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +79,7 @@
       <workItem from="1649177096985" duration="5592000" />
       <workItem from="1649230156405" duration="335000" />
       <workItem from="1649360725316" duration="660000" />
-      <workItem from="1649493020609" duration="3717000" />
+      <workItem from="1649493020609" duration="4074000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1649181653364</created>
@@ -165,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649505999600</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="TASK: Implemented IDepartmentRepository.java.">
+      <created>1649506321601</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649506321601</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +201,7 @@
     <MESSAGE value="Removed the test entity package." />
     <MESSAGE value="TASK: Implemented IFacultyFactory." />
     <MESSAGE value="TASK: Implemented FacultyRepositoryImpl.java." />
-    <option name="LAST_COMMIT_MESSAGE" value="TASK: Implemented FacultyRepositoryImpl.java." />
+    <MESSAGE value="TASK: Implemented IDepartmentRepository.java." />
+    <option name="LAST_COMMIT_MESSAGE" value="TASK: Implemented IDepartmentRepository.java." />
   </component>
 </project>
