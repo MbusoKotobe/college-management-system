@@ -7,6 +7,9 @@
     <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented DepartmentRepository.java.">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Faculty.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Faculty.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/DepartmentRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/DepartmentRepositoryImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/DepartmentRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/DepartmentRepositoryImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,6 +126,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DepartmentRepositoryImplTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.DepartmentRepositoryImplTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FacultyFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CollegeManagementSystem" />
       <extension name="coverage">
@@ -141,6 +160,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.DepartmentRepositoryImplTest" />
+        <item itemvalue="JUnit.DepartmentRepositoryImplTest.update" />
         <item itemvalue="JUnit.DepartmentRepositoryImplTest.create" />
         <item itemvalue="JUnit.DepartmentFactoryTest" />
         <item itemvalue="JUnit.FacultyFactoryTest" />
@@ -289,7 +309,6 @@
     <MESSAGE value="TASK: Implemented FacultyRepositoryImpl.java." />
     <MESSAGE value="TASK: Implemented IDepartmentRepository.java." />
     <MESSAGE value="TASK: Implemented DepartmentRepository.java." />
-    <option name="LAST_COMMIT_MESSAGE" value="TASK: Implemented DepartmentRepository.java." />
     <option name="LAST_COMMIT_MESSAGE" value="REFACTORING: Removed impl package." />
   </component>
 </project>

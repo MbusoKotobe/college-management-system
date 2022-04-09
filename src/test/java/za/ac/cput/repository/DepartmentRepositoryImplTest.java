@@ -35,11 +35,17 @@ class DepartmentRepositoryImplTest
     @Test
     void update ()
     {
-
+        repository.create(department);
+        Department updatedDepartment = new Department.Builder().copy(department)
+                .setDepartmentName("Multimedia Technology")
+                .build();
+        assertNotNull(repository.update(updatedDepartment));
     }
 
     @Test
     void delete ()
     {
+        boolean operationStatus = repository.delete(department.getDeparmentId());
+        assertTrue(operationStatus);
     }
 }

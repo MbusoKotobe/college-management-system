@@ -50,6 +50,7 @@ public class DepartmentRepositoryImpl implements IDepartmentRepository
         {
             departments.remove(outdatedDepartment);
             departments.add(object);
+            return object;
         }
         return null;
     }
