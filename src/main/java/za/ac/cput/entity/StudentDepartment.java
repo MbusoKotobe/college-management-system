@@ -7,10 +7,14 @@
 package za.ac.cput.entity;
 
 public class StudentDepartment {
-    private static long studentNumber;
-    private static int departmentId;
+    private long studentNumber;
+    private  int departmentId;
 
-    private StudentDepartment (Builder builder) {
+    public StudentDepartment (long studentNumber, int departmentId){
+        this.studentNumber = studentNumber;
+        this.departmentId = departmentId;
+    }
+    public StudentDepartment(Builder builder) {
         this.studentNumber = studentNumber;
         this.departmentId = departmentId;
     }
@@ -20,23 +24,15 @@ public class StudentDepartment {
     }
 
     public void setStudentNumber(long studentNumber) {
-        this.studentNumber = studentNumber;}
-
+        this.studentNumber = studentNumber;
+    }
+    public int setDepartmentId(){
+        return departmentId;
+    }
     public int getDepartmentId() {
         return departmentId;
     }
 
-   // public void setDepartmentId(int departmentId) {
-       // this.departmentId = departmentId;
-    //}
-
-    @Override
-    public String toString() {
-        return "StudentDepartment{" +
-                "studentNumber=" + studentNumber +
-                ", departmentId=" + departmentId +
-                '}';
-    }
     public  static  class  Builder {
         private long studentNumber;
         private int departmentId;
@@ -52,15 +48,23 @@ public class StudentDepartment {
         }
 
 
-        public Builder copy(StudentDepartment student) {
-          this.studentNumber = StudentDepartment.studentNumber;
-            this.departmentId = StudentDepartment.departmentId;
+        public Builder copy(StudentDepartment T) {
+            this.studentNumber = T.studentNumber;
+            this.departmentId = T.departmentId;
             return this;
         }
 
         public StudentDepartment build() {
             return new StudentDepartment(this);
 
+        }
+
+        @Override
+        public String toString() {
+            return "StudentDepartment{" +
+                    "studentNumber=" + studentNumber +
+                    ", departmentId=" + departmentId +
+                    '}';
         }
     }
 }
