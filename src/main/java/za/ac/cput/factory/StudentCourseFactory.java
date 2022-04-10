@@ -9,17 +9,15 @@ ADP 3 Assignment Group1
 
 
 import za.ac.cput.entity.StudentCourse;
-import za.ac.cput.utility.Helper;
 
 public class StudentCourseFactory
 {
 
     public static StudentCourse createStudentCourse(int courseId)
     {
-       // String studentCourseId = Helper.generateId();     --- needs attention to convert to an integer
 
         StudentCourse studentCourse  = new StudentCourse.Builder()
-                .setStudentNumber(218247720)
+                .setStudentNumber(218568202)
                 .setCourseId(courseId)
                 .build();
         return studentCourse;

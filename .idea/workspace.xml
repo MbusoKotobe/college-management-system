@@ -4,27 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented Department Factory.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/StudentCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentCourseFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IStudentCourseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IStudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/StudentCourseRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/StudentRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/utility/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/StudentFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/StudentCourseRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-=======
-    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="REFACTORING: Removed impl package.">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
->>>>>>> a798de3fa638ffccef51fe1a812e4cc822382bcb
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentCourseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentCourseFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/utility/Helper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/StudentFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/StudentFactoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/StudentCourseRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/StudentCourseRepositoryImplTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +79,7 @@
       <recent name="za.ac.cput.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentCourseRepositoryImplTest">
+  <component name="RunManager" selected="JUnit.StudentFactoryTest">
     <configuration name="StudentCourseRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="college-management-system" />
       <extension name="coverage">
@@ -174,8 +160,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StudentCourseRepositoryImplTest" />
         <item itemvalue="JUnit.StudentFactoryTest" />
+        <item itemvalue="JUnit.StudentCourseRepositoryImplTest" />
         <item itemvalue="JUnit.StudentCourseRepositoryImplTest.b_read" />
         <item itemvalue="JUnit.StudentCourseRepositoryImplTest.a_create" />
         <item itemvalue="JUnit.StudentRepositoryImplTest.a_create" />
@@ -192,12 +178,10 @@
       <updated>1649177095211</updated>
       <workItem from="1649177096985" duration="5592000" />
       <workItem from="1649230156405" duration="335000" />
-<<<<<<< HEAD
       <workItem from="1649360725316" duration="660000" />
       <workItem from="1649364575959" duration="1086000" />
       <workItem from="1649466636949" duration="7981000" />
-=======
->>>>>>> a798de3fa638ffccef51fe1a812e4cc822382bcb
+      <workItem from="1649623338181" duration="452000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1649181653364</created>

@@ -9,16 +9,13 @@ ADP 3 Assignment Group1
 
 
 import za.ac.cput.entity.Student;
-import za.ac.cput.utility.Helper;
 
 public class StudentFactory
 {
-    public static Student createStudent (String middleName, String lastName, long studentNumber)
+    public static Student createStudent (String firstName, String middleName, String lastName, long studentNumber)
     {
-        String studentName = Helper.generateId();
-
         Student student = new Student.Builder()
-                .setFirstName(studentName)
+                .setFirstName(firstName)
                 .setMiddleName(middleName)
                 .setLastName(lastName)
                 .setStudentNumber(studentNumber)
