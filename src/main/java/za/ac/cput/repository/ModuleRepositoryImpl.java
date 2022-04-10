@@ -12,15 +12,14 @@ import java.util.Set;
 
 
 public class ModuleRepositoryImpl implements IModuleRepository {
+
     private static ModuleRepositoryImpl moduleRepositoryImpl = null;
     private Set<Module> moduleDB;
 
-    private ModuleRepositoryImpl() {
-        moduleDB = new HashSet<>();
-    }
-
-    public static ModuleRepositoryImpl createModuleRepositoryImpl() {
-        if (moduleRepositoryImpl == null) {
+    public static ModuleRepositoryImpl getModuleRepositoryImpl()
+    {
+        if (moduleRepositoryImpl == null)
+        {
             moduleRepositoryImpl = new ModuleRepositoryImpl();
         }
         return moduleRepositoryImpl;
