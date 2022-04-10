@@ -69,6 +69,14 @@ public class Department {
             return this;
         }
 
+        public Builder copy(Department department)
+        {
+            this.departmentId = department.departmentId;
+            this.departmentName = department.departmentName;
+            this.departmentDescription = department.departmentDescription;
+            return this;
+        }
+
         public Department build()
         {
             return new Department(this);
