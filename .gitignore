@@ -11,6 +11,9 @@ buildNumber.properties
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 
+/.idea/workspace.xml
+.DS_Store
+target/
 # Eclipse
 .classpath
 .project
@@ -27,6 +30,7 @@ nb-configuration.xml
 
 # Intellij
 .idea/
+.idea/workspace.xml
 *.iml
 *.iws
 *.ipr
