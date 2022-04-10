@@ -1,7 +1,5 @@
 package za.ac.cput.repository;
 
-import java.util.ArrayList;
-
 public interface IRepository <T, I>
 {
     T create(T object);
