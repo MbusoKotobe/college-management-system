@@ -11,11 +11,11 @@ public class Module {
     private String moduleName;
     private String moduleDescription;
 
-    private Module(Module.Builder module)
+    private Module(Builder builder)
     {
-        this.moduleId = module.moduleId;
-        this.moduleName = module.moduleName;
-        this.moduleDescription = module.moduleDescription;
+        this.moduleId = builder.moduleId;
+        this.moduleName = builder.moduleName;
+        this.moduleDescription = builder.moduleDescription;
     }
 
     public String getModuleId ()
@@ -42,26 +42,23 @@ public class Module {
 
        }
 
-    class Builder{
+    public static class Builder {
 
         String moduleId;
         String moduleName;
         String moduleDescription;
 
-        public Module.Builder setModuleId (String moduleId)
-        {
+        public Module.Builder setModuleId(String moduleId) {
             this.moduleId = moduleId;
             return this;
         }
 
-        public Module.Builder setModuleName (String moduleName)
-        {
+        public Module.Builder setModuleName(String moduleName) {
             this.moduleName = moduleName;
             return this;
         }
 
-        public Module.Builder setModuleDescription (String moduleDescription)
-        {
+        public Module.Builder setModuleDescription(String moduleDescription) {
             this.moduleDescription = moduleDescription;
             return this;
         }
@@ -73,10 +70,10 @@ public class Module {
             return this;
         }
 
-        public Module build()
-        {
+        public Module build() {
             return new Module(this);
         }
+
     }
 
 

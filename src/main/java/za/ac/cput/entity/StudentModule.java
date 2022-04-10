@@ -3,6 +3,7 @@ package za.ac.cput.entity;
 
 /*
  * Zintle Magwaxaza (218109911)
+ * Bridging class between student and Module
  * StudentModule.java
  * Date: 08 April 2022
  */
@@ -11,10 +12,10 @@ public class StudentModule {
     private long studentNumber;
     private String moduleId;
 
-    private StudentModule(StudentModule.Builder studentModule)
+    private StudentModule(Builder builder)
     {
-        this.studentNumber = studentModule.studentNumber;
-        this.moduleId = studentModule.moduleId;
+        this.studentNumber = builder.studentNumber;
+        this.moduleId = builder.moduleId;
     }
 
     public long getStudentNumber ()
@@ -34,7 +35,7 @@ public class StudentModule {
                 ", moduleId'" + moduleId + '\'' + '}';
        }
 
-    class Builder{
+      public static class Builder{
 
        private long studentNumber;
        private String moduleId;
