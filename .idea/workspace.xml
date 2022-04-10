@@ -27,9 +27,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -43,6 +43,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -77,12 +84,12 @@
       <recent name="za.ac.cput.repository" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="za.ac.cput.repository" />
       <recent name="za.ac.cput.factory" />
       <recent name="za.ac.cput.entity" />
-      <recent name="za.ac.cput.repository" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.StudentDepartmentFactoryTest">
     <configuration name="StudentDepartmentFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CollegeManagementSystem" />
       <extension name="coverage">
@@ -98,9 +105,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StudentDepartmentRepositoryTest.b_read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.StudentDepartmentRepositoryTest" />
+      <option name="METHOD_NAME" value="b_read" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentDepartmentRepositoryTest.e_delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.StudentDepartmentRepositoryTest" />
+      <option name="METHOD_NAME" value="e_delete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StudentDepartmentFactoryTest" />
+        <item itemvalue="JUnit.StudentDepartmentRepositoryTest.b_read" />
+        <item itemvalue="JUnit.StudentDepartmentRepositoryTest.e_delete" />
       </list>
     </recent_temporary>
   </component>

@@ -3,25 +3,25 @@ package za.ac.cput.entity;
 /***
  * Department.java
  * Entity for the Department
- * @Author: Mbuso Kotobe (218040385)
+ * Author: Mbuso Kotobe (218040385)
  * Date: 06 April 2022
  */
 public class Department {
-    int deparmentId;
+    int departmentId;
     String departmentName;
     String departmentDescription;
     Faculty faculty;
 
     private Department(Builder department)
     {
-        this.deparmentId = department.deparmentId;
+        this.departmentId = department.departmentId;
         this.departmentName = department.departmentName;
         this.departmentDescription = department.departmentDescription;
     }
 
     public int getDeparmentId ()
     {
-        return deparmentId;
+        return departmentId;
     }
 
     public String getDepartmentName ()
@@ -39,15 +39,15 @@ public class Department {
         return faculty;
     }
 
-    class Builder{
-        int deparmentId;
+    public static class Builder{
+        int departmentId;
         String departmentName;
         String departmentDescription;
         Faculty faculty;
 
         public Builder setDeparmentId (int deparmentId)
         {
-            this.deparmentId = deparmentId;
+            this.departmentId = deparmentId;
             return this;
         }
 
@@ -66,6 +66,14 @@ public class Department {
         public Builder setFaculty (Faculty faculty)
         {
             this.faculty = faculty;
+            return this;
+        }
+
+        public Builder copy(Department department)
+        {
+            this.departmentId = department.departmentId;
+            this.departmentName = department.departmentName;
+            this.departmentDescription = department.departmentDescription;
             return this;
         }
 
