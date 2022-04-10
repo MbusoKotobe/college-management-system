@@ -9,7 +9,7 @@ import za.ac.cput.entity.Lecturer;
 
 import za.ac.cput.utility.Utilities;
 
-public class lecturerFactory {
+public class LecturerFactory {
     public static Lecturer createLecturer(String firstName, String lastName){
         long lecturerId = Utilities.generateId();
         Lecturer lecturer = new Lecturer.Builder().setLectureId(lecturerId)

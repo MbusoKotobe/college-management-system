@@ -5,7 +5,7 @@ import za.ac.cput.entity.Lecturer;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class lecturerFactoryTest {
+class LecturerFactoryTest {
     @Test
     public void add(){
         Lecturer l = new Lecturer.Builder().setLectureId(12252258).setFirstName("Arinze")
