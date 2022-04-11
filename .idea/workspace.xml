@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="REFACTORING: Removed impl package.">
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/entity/ModuleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/ModuleFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/ModuleRepositoryImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/ModuleRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/ModuleRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/entity/ModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/entity/ModuleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +79,7 @@
       <recent name="za.ac.cput.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ModuleTest.testBuilder">
+  <component name="RunManager" selected="JUnit.ModuleRepositoryImplTest.read">
     <configuration name="ModuleFactoryTest.createModule" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CollegeManagementSystem" />
       <extension name="coverage">
@@ -110,6 +107,22 @@
       <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
       <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.ModuleRepositoryImplTest" />
       <option name="METHOD_NAME" value="create" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ModuleRepositoryImplTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.ModuleRepositoryImplTest" />
+      <option name="METHOD_NAME" value="read" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,6 +162,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ModuleRepositoryImplTest.read" />
         <item itemvalue="JUnit.ModuleTest.testBuilder" />
         <item itemvalue="JUnit.ModuleRepositoryImplTest.create" />
         <item itemvalue="JUnit.ModuleFactoryTest.createModule" />
@@ -166,7 +180,7 @@
       <updated>1649177095211</updated>
       <workItem from="1649177096985" duration="5592000" />
       <workItem from="1649230156405" duration="335000" />
-      <workItem from="1649537831523" duration="40041000" />
+      <workItem from="1649537831523" duration="46848000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1649181653364</created>

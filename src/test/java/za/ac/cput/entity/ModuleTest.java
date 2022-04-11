@@ -6,8 +6,6 @@
 
 
 package za.ac.cput.entity;
-import za.ac.cput.entity.Module;
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 public class ModuleTest {
