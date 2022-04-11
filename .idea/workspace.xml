@@ -4,27 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented Department Factory.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/CourseModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CourseFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/CourseModuleFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/CourseModuleRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/CourseRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/ICourseModuleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/ICourseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/CourseFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/CourseModuleFactoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/CourseModuleRepositoryImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/CourseRepositoryImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: All work done LectureModule.java entity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uml/ADP_Assignment_Group_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/uml/ADP_Assignment_Group_1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -38,13 +27,23 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="218040385" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="27O31qmelYjTCp1HkbLdwDx5yYv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -82,24 +81,8 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.CourseModuleRepositoryImplTest">
-    <configuration name="CourseModuleFactoryTest.createCourseModule" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="college-management-system" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="za.ac.cput.factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.CourseModuleFactoryTest" />
-      <option name="METHOD_NAME" value="createCourseModule" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CourseModuleRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="college-management-system" />
+      <module name="CollegeManagementSystem" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="za.ac.cput.repository.*" />
@@ -113,23 +96,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="college-management-system" />
+    <configuration name="StudentDepartmentFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="za.ac.cput.repository.*" />
+          <option name="PATTERN" value="za.ac.cput.factory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.CourseRepositoryImplTest" />
+      <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.StudentDepartmentFactoryTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseRepositoryImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="college-management-system" />
+    <configuration name="StudentDepartmentRepositoryTest.b_read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="za.ac.cput.repository.*" />
@@ -137,15 +120,15 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.CourseRepositoryImplTest" />
-      <option name="METHOD_NAME" value="create" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.StudentDepartmentRepositoryTest" />
+      <option name="METHOD_NAME" value="b_read" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseRepositoryImplTest.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="college-management-system" />
+    <configuration name="StudentDepartmentRepositoryTest.e_delete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="za.ac.cput.repository.*" />
@@ -153,8 +136,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
-      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.CourseRepositoryImplTest" />
-      <option name="METHOD_NAME" value="read" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.StudentDepartmentRepositoryTest" />
+      <option name="METHOD_NAME" value="e_delete" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,10 +146,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CourseModuleRepositoryImplTest" />
-        <item itemvalue="JUnit.CourseRepositoryImplTest" />
-        <item itemvalue="JUnit.CourseRepositoryImplTest.read" />
-        <item itemvalue="JUnit.CourseRepositoryImplTest.create" />
-        <item itemvalue="JUnit.CourseModuleFactoryTest.createCourseModule" />
+        <item itemvalue="JUnit.StudentDepartmentFactoryTest" />
+        <item itemvalue="JUnit.StudentDepartmentRepositoryTest.b_read" />
+        <item itemvalue="JUnit.StudentDepartmentRepositoryTest.e_delete" />
       </list>
     </recent_temporary>
   </component>
@@ -180,9 +162,6 @@
       <updated>1649177095211</updated>
       <workItem from="1649177096985" duration="5592000" />
       <workItem from="1649230156405" duration="335000" />
-      <workItem from="1649360725316" duration="660000" />
-      <workItem from="1649364575959" duration="1086000" />
-      <workItem from="1649447565912" duration="23097000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1649181653364</created>
@@ -219,7 +198,35 @@
       <option name="project" value="LOCAL" />
       <updated>1649236906153</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="TASK: Added LectureModule.java entity">
+      <created>1649260739267</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649260739268</updated>
+    </task>
+    <task id="LOCAL-00007" summary="TASK: Added StudentDepartment.java entity">
+      <created>1649260953310</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649260953310</updated>
+    </task>
+    <task id="LOCAL-00008" summary="TASK: Added StudentDepartment.java entity">
+      <created>1649346202572</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649346202572</updated>
+    </task>
+    <task id="LOCAL-00009" summary="TASK: Added LectureModule.java entity">
+      <created>1649346496496</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649346496496</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +248,8 @@
     <MESSAGE value="TASK: Added application description." />
     <MESSAGE value="TASK: Added uml image inside the README.md." />
     <MESSAGE value="REFACTORING: Removed impl package." />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTORING: Removed impl package." />
+    <MESSAGE value="TASK: Added StudentDepartment.java entity" />
+    <MESSAGE value="TASK: Added LectureModule.java entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="TASK: Added LectureModule.java entity" />
   </component>
 </project>
