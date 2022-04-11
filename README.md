@@ -7,8 +7,7 @@ student, courses and lecturer's information.
 ![College System UML Diagram!](uml/ADP_Assignment_Group_1.png "College System UML Diagram")
 ---
 
-## Repository Interfaces & Classes Naming Convention 
----
+## Repository Interfaces & Classes Naming Convention
 
 ### Naming the Interface
 All interfaces created should follow the convention below.
@@ -26,7 +25,6 @@ e.g StudentRepositoryImpl.java
 #### You are strictly advised to stick to the naming convention while working on the project, failure to do so will result in the code will being rejected upon reviewing.
 ---
 ## Collaboration Rules
----
 
 ### Commit Messages
 All commits made in this project should follow the convention below.
