@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented Department Factory.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentCourseFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentCourseFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/utility/Helper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/StudentFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/StudentFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/StudentCourseRepositoryImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/StudentCourseRepositoryImplTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented Department Factory." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,7 +174,7 @@
       <workItem from="1649360725316" duration="660000" />
       <workItem from="1649364575959" duration="1086000" />
       <workItem from="1649466636949" duration="7981000" />
-      <workItem from="1649623338181" duration="452000" />
+      <workItem from="1649623338181" duration="1052000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1649181653364</created>
