@@ -4,7 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented Department Factory." />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented Department Factory.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/StudentCourse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentCourseFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IStudentCourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/StudentCourseRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/StudentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/utility/Helper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/StudentFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/StudentCourseRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_Apr_2022_09_44__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="REFACTORING: Removed impl package.">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+>>>>>>> a798de3fa638ffccef51fe1a812e4cc822382bcb
+=======
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Implemented DepartmentRepositoryImplTest.java.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/repository/FacultyRepositoryImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/FacultyRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/FacultyRepositoryImpl.java" afterDir="false" />
+>>>>>>> 542ff0b8672b6c71175b5cb63f654b9044a4472c
+    </list>
+>>>>>>> master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,10 +54,17 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="218040385" />
+        <entry key="$PROJECT_DIR$" value="Department-Factory" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="master" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -72,7 +111,12 @@
       <recent name="za.ac.cput.entity" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.StudentFactoryTest">
+=======
+<<<<<<< HEAD
+  <component name="RunManager" selected="JUnit.StudentCourseRepositoryImplTest">
+>>>>>>> master
     <configuration name="StudentCourseRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="college-management-system" />
       <extension name="coverage">
@@ -83,13 +127,31 @@
       </extension>
       <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
       <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.StudentCourseRepositoryImplTest" />
+=======
+  <component name="RunManager" selected="JUnit.FacultyRepositoryImplTest">
+    <configuration name="DepartmentFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.DepartmentFactoryTest" />
+>>>>>>> 542ff0b8672b6c71175b5cb63f654b9044a4472c
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="StudentCourseRepositoryImplTest.a_create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="college-management-system" />
+=======
+    <configuration name="DepartmentRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
+>>>>>>> 542ff0b8672b6c71175b5cb63f654b9044a4472c
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="za.ac.cput.repository.*" />
@@ -97,15 +159,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.StudentCourseRepositoryImplTest" />
       <option name="METHOD_NAME" value="a_create" />
       <option name="TEST_OBJECT" value="method" />
+=======
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.DepartmentRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+>>>>>>> 542ff0b8672b6c71175b5cb63f654b9044a4472c
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="StudentCourseRepositoryImplTest.b_read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="college-management-system" />
+=======
+    <configuration name="DepartmentRepositoryImplTest.create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
+>>>>>>> 542ff0b8672b6c71175b5cb63f654b9044a4472c
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="za.ac.cput.repository.*" />
@@ -113,13 +185,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.StudentCourseRepositoryImplTest" />
       <option name="METHOD_NAME" value="b_read" />
+=======
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.DepartmentRepositoryImplTest" />
+      <option name="METHOD_NAME" value="create" />
+>>>>>>> 542ff0b8672b6c71175b5cb63f654b9044a4472c
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="StudentFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="college-management-system" />
       <extension name="coverage">
@@ -131,12 +209,9 @@
       <option name="PACKAGE_NAME" value="za.ac.cput.factory" />
       <option name="MAIN_CLASS_NAME" value="za.ac.cput.factory.StudentFactoryTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentRepositoryImplTest.a_create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="college-management-system" />
+=======
+    <configuration name="DepartmentRepositoryImplTest.update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="za.ac.cput.repository.*" />
@@ -144,20 +219,59 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.DepartmentRepositoryImplTest" />
+      <option name="METHOD_NAME" value="update" />
+      <option name="TEST_OBJECT" value="method" />
+>>>>>>> 542ff0b8672b6c71175b5cb63f654b9044a4472c
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+<<<<<<< HEAD
+    <configuration name="StudentRepositoryImplTest.a_create" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="college-management-system" />
+=======
+    <configuration name="FacultyRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
+>>>>>>> 542ff0b8672b6c71175b5cb63f654b9044a4472c
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+<<<<<<< HEAD
       <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.StudentRepositoryImplTest" />
       <option name="METHOD_NAME" value="a_create" />
       <option name="TEST_OBJECT" value="method" />
+=======
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.FacultyRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+>>>>>>> 542ff0b8672b6c71175b5cb63f654b9044a4472c
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <item itemvalue="JUnit.StudentCourseRepositoryImplTest" />
+>>>>>>> master
         <item itemvalue="JUnit.StudentFactoryTest" />
         <item itemvalue="JUnit.StudentCourseRepositoryImplTest" />
         <item itemvalue="JUnit.StudentCourseRepositoryImplTest.b_read" />
         <item itemvalue="JUnit.StudentCourseRepositoryImplTest.a_create" />
         <item itemvalue="JUnit.StudentRepositoryImplTest.a_create" />
+=======
+        <item itemvalue="JUnit.FacultyRepositoryImplTest" />
+        <item itemvalue="JUnit.DepartmentRepositoryImplTest" />
+        <item itemvalue="JUnit.DepartmentRepositoryImplTest.update" />
+        <item itemvalue="JUnit.DepartmentRepositoryImplTest.create" />
+        <item itemvalue="JUnit.DepartmentFactoryTest" />
+>>>>>>> 542ff0b8672b6c71175b5cb63f654b9044a4472c
       </list>
     </recent_temporary>
   </component>
@@ -171,10 +285,24 @@
       <updated>1649177095211</updated>
       <workItem from="1649177096985" duration="5592000" />
       <workItem from="1649230156405" duration="335000" />
+<<<<<<< HEAD
       <workItem from="1649360725316" duration="660000" />
       <workItem from="1649364575959" duration="1086000" />
       <workItem from="1649466636949" duration="7981000" />
       <workItem from="1649623338181" duration="1052000" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <workItem from="1649360725316" duration="660000" />
+      <workItem from="1649364575959" duration="1086000" />
+      <workItem from="1649466636949" duration="7981000" />
+=======
+>>>>>>> a798de3fa638ffccef51fe1a812e4cc822382bcb
+=======
+      <workItem from="1649360725316" duration="660000" />
+      <workItem from="1649493020609" duration="8806000" />
+>>>>>>> 542ff0b8672b6c71175b5cb63f654b9044a4472c
+>>>>>>> master
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <created>1649181653364</created>
@@ -211,7 +339,77 @@
       <option name="project" value="LOCAL" />
       <updated>1649236906153</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="TASK: Added and implemented the Faculty entity.">
+      <created>1649252502719</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649252502719</updated>
+    </task>
+    <task id="LOCAL-00007" summary="REFACTORING: Fixed department spelling error.">
+      <created>1649252571972</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649252571972</updated>
+    </task>
+    <task id="LOCAL-00008" summary="TASK: Implemented FacultyFactory.">
+      <created>1649253584850</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649253584850</updated>
+    </task>
+    <task id="LOCAL-00009" summary="TASK: Implemented Department Factory.">
+      <created>1649255111538</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1649255111538</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Removed the test entity package.">
+      <created>1649362599846</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1649362599847</updated>
+    </task>
+    <task id="LOCAL-00011" summary="TASK: Implemented IFacultyFactory.">
+      <created>1649504649531</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1649504649531</updated>
+    </task>
+    <task id="LOCAL-00012" summary="TASK: Implemented FacultyRepositoryImpl.java.">
+      <created>1649505999600</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1649505999600</updated>
+    </task>
+    <task id="LOCAL-00013" summary="TASK: Implemented IDepartmentRepository.java.">
+      <created>1649506321601</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649506321601</updated>
+    </task>
+    <task id="LOCAL-00014" summary="TASK: Implemented DepartmentRepository.java.">
+      <created>1649506684404</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1649506684404</updated>
+    </task>
+    <task id="LOCAL-00015" summary="TASK: Implemented DepartmentRepositoryImplTest.java.">
+      <created>1649524205108</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1649524205108</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +431,16 @@
     <MESSAGE value="TASK: Added application description." />
     <MESSAGE value="TASK: Added uml image inside the README.md." />
     <MESSAGE value="REFACTORING: Removed impl package." />
-    <option name="LAST_COMMIT_MESSAGE" value="REFACTORING: Removed impl package." />
+    <MESSAGE value="TASK: Added and implemented the Faculty entity." />
+    <MESSAGE value="REFACTORING: Fixed department spelling error." />
+    <MESSAGE value="TASK: Implemented FacultyFactory." />
+    <MESSAGE value="TASK: Implemented Department Factory." />
+    <MESSAGE value="Removed the test entity package." />
+    <MESSAGE value="TASK: Implemented IFacultyFactory." />
+    <MESSAGE value="TASK: Implemented FacultyRepositoryImpl.java." />
+    <MESSAGE value="TASK: Implemented IDepartmentRepository.java." />
+    <MESSAGE value="TASK: Implemented DepartmentRepository.java." />
+    <MESSAGE value="TASK: Implemented DepartmentRepositoryImplTest.java." />
+    <option name="LAST_COMMIT_MESSAGE" value="TASK: Implemented DepartmentRepositoryImplTest.java." />
   </component>
 </project>
