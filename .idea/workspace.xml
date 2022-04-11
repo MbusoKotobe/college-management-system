@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: Added LectureModule.java entity">
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/LectureModuleDepartmentFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/factory/StudentDepartmentFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/ILectureModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/IStudentDepartment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/LectureModuleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/repository/StudentDepartmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/za/ac/cput/factory/StudentDepartmentFactoryTest.java" afterDir="false" />
+    <list default="true" id="debab831-a9a0-43c9-aaaf-5616b41b4059" name="Changes" comment="TASK: All work done LectureModule.java entity">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/LectureModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/LectureModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/StudentDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/za/ac/cput/entity/StudentDepartment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +80,22 @@
       <recent name="za.ac.cput.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentDepartmentFactoryTest">
+  <component name="RunManager" selected="JUnit.CourseModuleRepositoryImplTest">
+    <configuration name="CourseModuleRepositoryImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CollegeManagementSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="za.ac.cput.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="za.ac.cput.repository" />
+      <option name="MAIN_CLASS_NAME" value="za.ac.cput.repository.CourseModuleRepositoryImplTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="StudentDepartmentFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CollegeManagementSystem" />
       <extension name="coverage">
@@ -139,6 +145,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CourseModuleRepositoryImplTest" />
         <item itemvalue="JUnit.StudentDepartmentFactoryTest" />
         <item itemvalue="JUnit.StudentDepartmentRepositoryTest.b_read" />
         <item itemvalue="JUnit.StudentDepartmentRepositoryTest.e_delete" />
