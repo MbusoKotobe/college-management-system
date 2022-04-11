@@ -4,6 +4,7 @@ package za.ac.cput.factory;
  * Entity for the Department
  * @Author: Elvis Ndlangamandla (213063964)
  * Date: 06 April 2022
+ *
  */
 import za.ac.cput.entity.LectureModule;
 
