@@ -1,5 +1,10 @@
 package za.ac.cput.repository;
 
-public interface IFacultyRepository
+import za.ac.cput.entity.Faculty;
+
+import java.util.Set;
+
+public interface IFacultyRepository extends IRepository<Faculty, Integer>
 {
+    Set<Faculty> getAll();
 }

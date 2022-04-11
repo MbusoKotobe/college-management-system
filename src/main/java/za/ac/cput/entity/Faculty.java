@@ -57,6 +57,14 @@ public class Faculty
             return this;
         }
 
+        public Builder copy(Faculty faculty)
+        {
+            this.facultyId = faculty.facultyId;
+            this.facultyName = faculty.facultyName;
+            this.facultyDescription = faculty.facultyDescription;
+            return this;
+        }
+
         public Faculty build()
         {
             return new Faculty(this);
