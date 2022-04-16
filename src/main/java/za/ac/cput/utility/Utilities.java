@@ -1,8 +1,10 @@
 package za.ac.cput.utility;
 
+import java.util.UUID;
+
 public class Utilities
 {
-    public static long generateId() {
-        return UUID.randomUUID().getMostSignificantBits() & Long.MAX_VALUE;
+    public static String generateId(){
+        return UUID.randomUUID().toString();
     }
 }
