@@ -27,7 +27,7 @@ public class FacultyRepositoryImpl implements IFacultyRepository
         return faculties;
     }
 
-    @Override
+
     public Faculty create (Faculty object)
     {
         if(object != null) faculties.add(object);
@@ -37,6 +37,7 @@ public class FacultyRepositoryImpl implements IFacultyRepository
     @Override
     public Faculty read (Integer id)
     {
+
         return faculties.stream()
                         .filter(faculty -> faculty.getFacultyId() == id)
                         .findAny().orElse(null);

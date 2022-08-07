@@ -1,16 +1,25 @@
 package za.ac.cput.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /***
  * Faculty.java
  * Entity for the Faculty
  * Author: Mbuso Kotobe (218040385)
  * Date: 06 April 2022
  */
+@Entity
 public class Faculty
 {
+    @Id
     int facultyId;
+
     String facultyName;
+
     String facultyDescription;
+
+    protected Faculty(){ }
 
     private Faculty(Builder faculty)
     {
