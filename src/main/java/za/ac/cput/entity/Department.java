@@ -1,5 +1,7 @@
 package za.ac.cput.entity;
 
+import javax.persistence.Id;
+
 /***
  * Department.java
  * Entity for the Department
