@@ -8,5 +8,5 @@
 package za.ac.cput.repository;
 
 
-public class LectureModuleRepository {
+public class LectureModuleRepositoryImpl {
 }

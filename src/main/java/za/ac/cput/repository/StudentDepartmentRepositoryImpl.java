@@ -12,20 +12,20 @@ import za.ac.cput.entity.StudentDepartment;
 import java.util.HashSet;
 import java.util.Set;
 
-public class StudentDepartmentRepository implements IStudentDepartment {
+public class StudentDepartmentRepositoryImpl implements IStudentDepartment {
 
-    private static StudentDepartmentRepository repository;
+    private static StudentDepartmentRepositoryImpl repository;
     Set<StudentDepartment> studentDepartment;
 
-    public StudentDepartmentRepository() {
+    public StudentDepartmentRepositoryImpl() {
 
 
         studentDepartment = new HashSet<StudentDepartment>();
 
     }
 
-    public static StudentDepartmentRepository getIStudentRepository() {
-        if (repository == null) repository = new StudentDepartmentRepository();
+    public static StudentDepartmentRepositoryImpl getIStudentRepository() {
+        if (repository == null) repository = new StudentDepartmentRepositoryImpl();
 
         return repository;
 
