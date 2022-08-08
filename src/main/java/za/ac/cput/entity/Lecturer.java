@@ -1,19 +1,23 @@
 package za.ac.cput.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Lecturer.java;
  * This is lecturer domain class
- * @Author: Anele Aneal Tose - 216079292
+ * Author: Anele Aneal Tose - 216079292
  * Date: 07 April 2022
  */
 
+@Entity
 public class Lecturer {
+    @Id
     private long lecturerId;
     private String firstName;
     private String lastName;
 
-    //Add private constructors
-    private Lecturer(){}
+    protected Lecturer(){}
     private Lecturer(Builder builder){
         this.lecturerId = builder.lecturerId;
         this.firstName = builder.firstName;
