@@ -2,6 +2,7 @@ package za.ac.cput.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 /**
  * LecturerDepartment.java;
@@ -13,8 +14,10 @@ import javax.persistence.Id;
 @Entity
 public class LecturerDepartment {
     @Id
+    @NotNull
     private long lecturerId;
     @Id
+    @NotNull
     private int departmentId;
 
     protected LecturerDepartment(){}
