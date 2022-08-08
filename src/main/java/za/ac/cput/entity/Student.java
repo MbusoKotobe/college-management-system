@@ -8,13 +8,22 @@ domain: Student entity
 ADP 3 Assignment Group1
 */
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-public class Student {
+@Entity
+public class Student
+{
     // private attributes
     private String firstName;
     private String middleName;
     private String lastName;
+
+    @Id
     private long studentNumber;
+
+    protected Student()
+    {}
 
 
     // builder pattern
