@@ -17,7 +17,7 @@ public class Module {
     private String moduleName;
     private String moduleDescription;
 
-    public Module() {
+    protected Module() {
     }
     private Module(Builder builder)
     {
