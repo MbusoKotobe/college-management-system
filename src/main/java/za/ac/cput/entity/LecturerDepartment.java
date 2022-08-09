@@ -1,16 +1,26 @@
 package za.ac.cput.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+
 /**
  * LecturerDepartment.java;
  * This is a bridging entity between Lecturer and Department domain classes
- * @Author: Anele Aneal Tose - 216079292
+ * Author: Anele Aneal Tose - 216079292
  * Date: 08 April 2022
  */
 
+@Entity
 public class LecturerDepartment {
+    @Id
+    @NotNull
     private long lecturerId;
+    @Id
+    @NotNull
     private int departmentId;
 
-    private LecturerDepartment(){}
+    protected LecturerDepartment(){}
     private LecturerDepartment(Builder builder){
         this.lecturerId = builder.lecturerId;
         this.departmentId = builder.departmentId;
