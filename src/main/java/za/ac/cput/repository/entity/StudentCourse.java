@@ -8,11 +8,20 @@ domain: studentCourse entity
 ADP 3 Assignment
 */
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class StudentCourse
 {
     //private attributes
+    @Id
     private long studentNumber;
+
     private int courseId;
+
+    protected StudentCourse()
+    {}
 
     private StudentCourse(Builder build)
     {
