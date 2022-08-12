@@ -1,16 +1,32 @@
-package za.ac.cput.repository.entity;
+
+package za.ac.cput.entity;
+
+import javax.persistence.*;
+
+import java.util.Set;
+
+import static javax.persistence.CascadeType.MERGE;
+import static javax.persistence.CascadeType.PERSIST;
 
 /***
  * Department.java
  * Entity for the Department
- * Author: Elvis Ndlangamandla (213063964)
+ * Author: Mbuso Kotobe (218040385)
  * Date: 06 April 2022
  */
+@Entity
 public class Department {
+    @Id
     int departmentId;
+
     String departmentName;
+
     String departmentDescription;
-    Faculty faculty;
+
+    @OneToMany(cascade = { PERSIST, MERGE })
+    Set<Faculty> faculty;
+
+    protected Department() {  }
 
     private Department(Builder department)
     {
@@ -34,7 +50,7 @@ public class Department {
         return departmentDescription;
     }
 
-    public Faculty getFaculty ()
+    public Set<Faculty> getFaculty ()
     {
         return faculty;
     }
@@ -43,7 +59,7 @@ public class Department {
         int departmentId;
         String departmentName;
         String departmentDescription;
-        Faculty faculty;
+        Set<Faculty> faculty;
 
         public Builder setDeparmentId (int deparmentId)
         {
@@ -65,7 +81,7 @@ public class Department {
 
         public Builder setFaculty (Faculty faculty)
         {
-            this.faculty = faculty;
+            this.faculty.add(faculty);
             return this;
         }
 
