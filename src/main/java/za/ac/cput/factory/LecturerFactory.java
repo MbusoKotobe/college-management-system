@@ -5,7 +5,7 @@ package za.ac.cput.factory;
  * @Author: Anele Aneal Tose - 216079292
  * Date: 07 April 2022
  */
-import za.ac.cput.entity.Lecturer;
+import za.ac.cput.repository.entity.Lecturer;
 
 import za.ac.cput.utility.Utilities;
 

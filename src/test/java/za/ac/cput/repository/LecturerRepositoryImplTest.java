@@ -3,7 +3,7 @@ package za.ac.cput.repository;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
-import za.ac.cput.entity.Lecturer;
+import za.ac.cput.repository.entity.Lecturer;
 import za.ac.cput.factory.LecturerFactory;
 
 import static org.junit.jupiter.api.Assertions.*;

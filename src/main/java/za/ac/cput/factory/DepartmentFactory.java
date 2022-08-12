@@ -1,6 +1,6 @@
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Department;
+import za.ac.cput.repository.entity.Department;
 
 public class DepartmentFactory
 {

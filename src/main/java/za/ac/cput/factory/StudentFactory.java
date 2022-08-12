@@ -8,7 +8,7 @@ ADP 3 Assignment Group1
 */
 
 
-import za.ac.cput.entity.Student;
+import za.ac.cput.repository.entity.Student;
 
 public class StudentFactory
 {

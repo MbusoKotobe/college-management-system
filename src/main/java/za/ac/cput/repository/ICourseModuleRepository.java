@@ -5,7 +5,7 @@ Date: 08 April 2022 */
 
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.CourseModule;
+import za.ac.cput.repository.entity.CourseModule;
 import java.util.Set;
 
 public interface ICourseModuleRepository extends IRepository<CourseModule, Integer>{

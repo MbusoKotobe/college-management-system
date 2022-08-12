@@ -6,8 +6,8 @@
 
 
 package za.ac.cput.repository;
-import za.ac.cput.entity.Module;
-import java.util.HashSet;
+import za.ac.cput.repository.entity.Module;
+
 import java.util.Set;
 
 

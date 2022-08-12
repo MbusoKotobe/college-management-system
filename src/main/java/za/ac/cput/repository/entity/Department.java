@@ -1,11 +1,9 @@
-package za.ac.cput.entity;
-
-import javax.persistence.Id;
+package za.ac.cput.repository.entity;
 
 /***
  * Department.java
  * Entity for the Department
- * Author: Mbuso Kotobe (218040385)
+ * Author: Elvis Ndlangamandla (213063964)
  * Date: 06 April 2022
  */
 public class Department {

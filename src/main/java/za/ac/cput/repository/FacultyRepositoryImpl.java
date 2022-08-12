@@ -1,6 +1,6 @@
 package za.ac.cput.repository;
 
-import za.ac.cput.entity.Faculty;
+import za.ac.cput.repository.entity.Faculty;
 
 import java.util.HashSet;
 import java.util.Set;

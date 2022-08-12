@@ -6,7 +6,7 @@
  */
 
 package za.ac.cput.repository;
-import za.ac.cput.entity.Module;
+import za.ac.cput.repository.entity.Module;
 
 import java.util.Set;
 

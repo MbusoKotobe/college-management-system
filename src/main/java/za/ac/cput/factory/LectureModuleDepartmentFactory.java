@@ -6,7 +6,7 @@ package za.ac.cput.factory;
  * Date: 06 April 2022
  *
  */
-import za.ac.cput.entity.LectureModule;
+import za.ac.cput.repository.entity.LectureModule;
 
 public class LectureModuleDepartmentFactory {
     public static LectureModule createLectureModule (long lectureId, String moduleId) {

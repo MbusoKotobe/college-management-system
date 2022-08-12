@@ -5,7 +5,7 @@ package za.ac.cput.repository;
  * @Author: Anele Aneal Tose - 216079292
  * Date: 09 April 2022
  */
-import za.ac.cput.entity.LecturerDepartment;
+import za.ac.cput.repository.entity.LecturerDepartment;
 
 import java.util.Set;
 

@@ -1,4 +1,4 @@
-package za.ac.cput.entity;
+package za.ac.cput.repository.entity;
 /**
  * LecturerDepartment.java;
  * This is a bridging entity between Lecturer and Department domain classes
