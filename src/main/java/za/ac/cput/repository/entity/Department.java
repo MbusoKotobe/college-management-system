@@ -1,7 +1,10 @@
+package za.ac.cput.repository.entity;
 
-package za.ac.cput.entity;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
 
 import java.util.Set;
 
@@ -11,7 +14,7 @@ import static javax.persistence.CascadeType.PERSIST;
 /***
  * Department.java
  * Entity for the Department
- * Author: Mbuso Kotobe (218040385)
+ * Author: Ndlangamandla (213063964)
  * Date: 06 April 2022
  */
 @Entity
