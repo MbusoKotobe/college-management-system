@@ -6,17 +6,27 @@ package za.ac.cput.entity;
  * Date: 08 April 2022
  */
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Module {
+    @Id
     private String moduleId;
+
     private String moduleName;
     private String moduleDescription;
 
+    protected Module() {
+    }
     private Module(Builder builder)
     {
         this.moduleId = builder.moduleId;
         this.moduleName = builder.moduleName;
         this.moduleDescription = builder.moduleDescription;
     }
+
+
 
     public String getModuleId ()
     {
