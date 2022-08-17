@@ -2,6 +2,7 @@ package za.ac.cput.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -20,6 +21,8 @@ public class Lecturer {
     private String firstName;
     @NotNull
     private String lastName;
+    @ManyToOne
+    Department department;
 
     protected Lecturer(){}
     private Lecturer(Builder builder){

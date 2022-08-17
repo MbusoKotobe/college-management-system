@@ -1,8 +1,6 @@
 package za.ac.cput.service;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import za.ac.cput.entity.Faculty;
@@ -20,6 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * Date: 14 August 2022
  */
 @SpringBootTest
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class FacultyServiceImplTest {
     private Faculty faculty = null;
 
@@ -29,7 +28,7 @@ public class FacultyServiceImplTest {
     @BeforeEach
     void setUp()
     {
-        faculty = FacultyFactory.build("Computer Science", "Information technology");
+        faculty = FacultyFactory.build(1,"Computer Science", "Computer Science");
     }
 
     @Order(1)
@@ -48,9 +47,10 @@ public class FacultyServiceImplTest {
     @Test
     void read()
     {
+        int facultyId = 1;
         Optional<Faculty> result = null;
 
-        result = service.read(faculty.getFacultyId());
+        result = service.read(facultyId);
 
         assertTrue(result.isPresent());
         assertEquals(faculty, result.get());
@@ -71,11 +71,18 @@ public class FacultyServiceImplTest {
     @Test
     void deleteById()
     {
+        int facultyId = 1;
+        Optional<Faculty> result = null;
 
+        service.deleteById(facultyId);
+        result = service.read(faculty.getFacultyId());
+
+        assertFalse(result.isPresent());
     }
-    
+
     @Order(5)
     @Test
+    @Disabled
     void delete()
     {
         Optional<Faculty> result = null;

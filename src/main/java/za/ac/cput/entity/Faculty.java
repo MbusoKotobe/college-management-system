@@ -1,7 +1,9 @@
 package za.ac.cput.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.util.Objects;
 
 /***
  * Faculty.java
@@ -13,6 +15,7 @@ import javax.persistence.Id;
 public class Faculty
 {
     @Id
+    @GeneratedValue
     int facultyId;
 
     String facultyName;
@@ -41,6 +44,31 @@ public class Faculty
     public String getFacultyDescription ()
     {
         return facultyDescription;
+    }
+
+    @Override
+    public boolean equals(Object o)
+    {
+        if (this == o) return true;
+        if (!(o instanceof Faculty)) return false;
+        Faculty faculty = (Faculty) o;
+        return getFacultyId() == faculty.getFacultyId() && Objects.equals(getFacultyName(), faculty.getFacultyName()) && Objects.equals(getFacultyDescription(), faculty.getFacultyDescription());
+    }
+
+    @Override
+    public int hashCode()
+    {
+        return Objects.hash(getFacultyId(), getFacultyName(), getFacultyDescription());
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Faculty{" +
+                "facultyId=" + facultyId +
+                ", facultyName='" + facultyName + '\'' +
+                ", facultyDescription='" + facultyDescription + '\'' +
+                '}';
     }
 
     public static class Builder{

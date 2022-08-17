@@ -11,13 +11,14 @@ import javax.validation.constraints.NotNull;
  * Date: 08 April 2022
  */
 
-@Entity
+//TODO: Remove Entity mapping for bridging entity.
+//@Entity
 public class LecturerDepartment {
-    @Id
-    @NotNull
+    //@Id
+    //@NotNull
     private long lecturerId;
-    @Id
-    @NotNull
+    //@Id
+    //@NotNull
     private int departmentId;
 
     protected LecturerDepartment(){}
