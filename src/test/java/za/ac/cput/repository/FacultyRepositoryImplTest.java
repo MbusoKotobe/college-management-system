@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class FacultyRepositoryImplTest
 {
     private IFacultyRepository repository = FacultyRepositoryImpl.getFacultyRepository();
-    private Faculty faculty = FacultyFactory.createFaculty("Informatics and Design", "Information and visual designing");
+    private Faculty faculty = FacultyFactory.build("Informatics and Design", "Information and visual designing");
 
     @Test
     void getAll ()
@@ -21,7 +21,7 @@ class FacultyRepositoryImplTest
     @Test
     void create ()
     {
-        Faculty faculty = FacultyFactory.createFaculty("Information Technology", "Information management");
+        Faculty faculty = FacultyFactory.build("Information Technology", "Information management");
         assertEquals(repository.create(faculty).getFacultyName(), faculty.getFacultyName());
     }
 
