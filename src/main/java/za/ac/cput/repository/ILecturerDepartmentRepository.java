@@ -10,7 +10,7 @@ import za.ac.cput.entity.LecturerDepartment;
 import java.util.Set;
 
 public interface ILecturerDepartmentRepository {
-    public Set<LecturerDepartment> getAll();
+    Set<LecturerDepartment> getAll();
 
     LecturerDepartment create (LecturerDepartment lecturerDepartment);
 

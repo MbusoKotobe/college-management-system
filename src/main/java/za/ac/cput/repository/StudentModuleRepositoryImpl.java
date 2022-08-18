@@ -14,7 +14,7 @@ import java.util.Set;
 public class StudentModuleRepositoryImpl implements IStudentModuleRepository{
 
     private static StudentModuleRepositoryImpl studentModuleRepositoryImpl = null;
-    private Set<StudentModule> studentModuleDB;
+    private final Set<StudentModule> studentModuleDB;
 
     private StudentModuleRepositoryImpl() {
         studentModuleDB = new HashSet<>();

@@ -12,7 +12,7 @@ import java.util.Set;
 
 public class LecturerRepositoryImpl implements ILecturerRepository{
     private static LecturerRepositoryImpl lecturerRepository = null;
-    private Set<Lecturer> lecturerDB;
+    private final Set<Lecturer> lecturerDB;
     private LecturerRepositoryImpl(){
         lecturerDB = new HashSet<>();
 

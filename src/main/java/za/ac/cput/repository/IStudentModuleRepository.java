@@ -10,7 +10,7 @@ import za.ac.cput.entity.StudentModule;
 import java.util.Set;
 
 public interface IStudentModuleRepository {
-    public Set<StudentModule> getAll();
+    Set<StudentModule> getAll();
    StudentModule create (StudentModule studentModule);
    StudentModule read (long studentNumber, String moduleId);
    boolean delete (long studentNumber, String moduleId);

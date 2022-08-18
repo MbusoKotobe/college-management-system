@@ -9,8 +9,8 @@ package za.ac.cput.entity;
  */
 
 public class StudentModule {
-    private long studentNumber;
-    private String moduleId;
+    private final long studentNumber;
+    private final String moduleId;
 
     private StudentModule(Builder builder)
     {

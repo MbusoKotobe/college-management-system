@@ -13,8 +13,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class StudentCourseRepositoryImplTest
 {
 
-    private static StudentCourseRepositoryImpl repository = StudentCourseRepositoryImpl.getRepo();
-    private static StudentCourse studentCourse = StudentCourseFactory.createStudentCourse(364);
+    private static final StudentCourseRepositoryImpl repository = StudentCourseRepositoryImpl.getRepo();
+    private static final StudentCourse studentCourse = StudentCourseFactory.createStudentCourse(364);
 
     //test 1 create
     @Test

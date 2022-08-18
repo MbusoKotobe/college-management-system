@@ -12,5 +12,5 @@ import za.ac.cput.entity.StudentDepartment;
 import java.util.Set;
 
 public interface IStudentDepartment extends IRepository<StudentDepartment, Long>{
-    public Set<StudentDepartment> getAll();
+    Set<StudentDepartment> getAll();
 }
