@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @TestMethodOrder(MethodOrderer.MethodName.class)
 class LecturerRepositoryImplTest {
     private static LecturerRepositoryImpl repository = LecturerRepositoryImpl.createLectureRepository();
-    private static Lecturer lecturer = LecturerFactory.createLecturer("Arinze", "Anikwue");
+    private static Lecturer lecturer = LecturerFactory.createLecturer(1, "Arinze", "Anikwue");
 
     @Test
     void a_create() {
