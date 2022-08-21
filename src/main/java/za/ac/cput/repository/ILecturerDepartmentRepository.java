@@ -5,16 +5,10 @@ package za.ac.cput.repository;
  * @Author: Anele Aneal Tose - 216079292
  * Date: 09 April 2022
  */
+import org.springframework.data.jpa.repository.JpaRepository;
 import za.ac.cput.entity.LecturerDepartment;
 
-import java.util.Set;
 
-public interface ILecturerDepartmentRepository {
-    public Set<LecturerDepartment> getAll();
+public interface ILecturerDepartmentRepository extends JpaRepository<LecturerDepartment,Long> {
 
-    LecturerDepartment create (LecturerDepartment lecturerDepartment);
-
-    LecturerDepartment read (long lecturerId, int departmentId);
-
-    boolean delete(long lecturerId, int departmentId);
 }
