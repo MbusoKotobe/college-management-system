@@ -10,6 +10,7 @@ ADP 3 Assignment Group1
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import java.util.Objects;
 
 @Entity
 public class Student
@@ -49,6 +50,23 @@ public class Student
 
     public long getStudentNumber() {
         return studentNumber;
+    }
+
+
+    @Override
+     public boolean equals(Object e)
+    {
+       if (this == e) return true;
+       if (e == null || getClass() != e.getClass()) return false;
+       Student student = (Student) e;
+       return firstName.equals(student.firstName) && middleName.equals(student.middleName)
+            && lastName.equals(student.lastName);
+    }
+
+    @Override
+    public int hashCode()
+    {
+        return Objects.hash(firstName, middleName, lastName, studentNumber);
     }
 
     @Override
