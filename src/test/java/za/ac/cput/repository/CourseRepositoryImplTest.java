@@ -14,8 +14,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
 class CourseRepositoryImplTest {
-    private static CourseRepositoryImpl courseRepo = CourseRepositoryImpl.getCourseRepository();
-    private static Course course1 = CourseFactory.createCourse(23,"ICT:Diploma AD",
+    private static final CourseRepositoryImpl courseRepo = CourseRepositoryImpl.getCourseRepository();
+    private static final Course course1 = CourseFactory.createCourse(23,"ICT:Diploma AD",
             "3 year Diploma in AD");
     @Test
     void a_create() {

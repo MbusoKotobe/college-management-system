@@ -16,7 +16,7 @@ public class StudentRepositoryImpl implements IStudentRepository
 {
     //implementing the repository and DB
     private static StudentRepositoryImpl repository = null;
-    private Set<Student> StudentDB = null;
+    private final Set<Student> StudentDB = null;
 
     private StudentRepositoryImpl getRepository()
     {

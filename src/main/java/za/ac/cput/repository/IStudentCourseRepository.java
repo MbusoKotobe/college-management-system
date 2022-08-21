@@ -14,5 +14,5 @@ import java.util.Set;
 public interface IStudentCourseRepository extends IRepository<StudentCourse, Integer>
 {
     // CRUD
-    public Set<StudentCourse> getAll();
+    Set<StudentCourse> getAll();
 }

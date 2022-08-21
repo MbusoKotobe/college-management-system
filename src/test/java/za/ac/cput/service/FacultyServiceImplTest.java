@@ -12,8 +12,8 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 /***
- * Faculty.java
- * Entity for the FacultyServiceImplTest
+ * FacultyServiceImplTest.java
+ * TestCase for the FacultyServiceImpl
  * @author Mbuso Kotobe (218040385)
  * Date: 14 August 2022
  */

@@ -9,5 +9,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import za.ac.cput.entity.Lecturer;
 
 public interface ILecturerRepository extends JpaRepository<Lecturer, Long> {
-
 }

@@ -15,8 +15,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
 class CourseModuleRepositoryImplTest {
-    private static CourseModuleRepositoryImpl courseModuleRepo = CourseModuleRepositoryImpl.getCourseModuleRepository();
-    private static CourseModule courseModule1 = CourseModuleFactory.createCourseModule(25, "ITS362S");
+    private static final CourseModuleRepositoryImpl courseModuleRepo = CourseModuleRepositoryImpl.getCourseModuleRepository();
+    private static final CourseModule courseModule1 = CourseModuleFactory.createCourseModule(25, "ITS362S");
 
     @Test
     void a_create() {

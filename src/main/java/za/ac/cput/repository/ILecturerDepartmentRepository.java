@@ -6,9 +6,10 @@ package za.ac.cput.repository;
  * Date: 09 April 2022
  */
 import org.springframework.data.jpa.repository.JpaRepository;
+import za.ac.cput.entity.Lecturer;
 import za.ac.cput.entity.LecturerDepartment;
 
+public interface ILecturerDepartmentRepository extends JpaRepository<Lecturer, Long> {
 
-public interface ILecturerDepartmentRepository extends JpaRepository<LecturerDepartment,Long> {
 
 }

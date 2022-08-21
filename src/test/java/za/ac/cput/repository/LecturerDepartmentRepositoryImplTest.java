@@ -10,9 +10,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.MethodName.class)
 class LecturerDepartmentRepositoryImplTest {
-    private static LecturerDepartmentRepositoryImpl repository =
+    private static final LecturerDepartmentRepositoryImpl repository =
             LecturerDepartmentRepositoryImpl.createLectureDepartmentRepository();
-    private static LecturerDepartment lecturerDepartment =
+    private static final LecturerDepartment lecturerDepartment =
             LecturerDepartmentFactory.createLecturerDepartment(12359645, 45698788);
 
     @Test

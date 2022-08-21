@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DepartmentRepositoryImplTest
 {
-    private IDepartmentRepository repository = DepartmentRepositoryImpl.getDepartmentRepository();
-    private Department department = DepartmentFactory.createDepartment("Information Technology", "Information management");
+    private final IDepartmentRepository repository = DepartmentRepositoryImpl.getDepartmentRepository();
+    private final Department department = DepartmentFactory.createDepartment("Information Technology", "Information management");
 
     @Test
     void getAll ()
