@@ -11,7 +11,7 @@ import java.util.Optional;
 @Service
 public class LecturerServiceImpl implements ILecturerService {
 
-    ILecturerRepository repository;
+    private final ILecturerRepository repository;
 
     @Autowired
     public LecturerServiceImpl(ILecturerRepository repository)

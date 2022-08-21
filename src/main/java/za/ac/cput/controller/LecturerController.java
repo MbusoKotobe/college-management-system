@@ -25,7 +25,7 @@ public class LecturerController {
     @PostMapping("save")
     public ResponseEntity<Lecturer> save(@RequestBody Lecturer lecturer){
         Lecturer newLecturer = service.save(lecturer);
-        return new ResponseEntity<>(newLecturer, HttpStatus.CREATED);
+        return new ResponseEntity(newLecturer, HttpStatus.CREATED);
     }
     @GetMapping("read/{lecturerId}")
     public ResponseEntity<Lecturer> read(@PathVariable long lecturerId) {
@@ -34,7 +34,7 @@ public class LecturerController {
         return ResponseEntity.ok(lecturer);
     }
     @DeleteMapping("delete/{id}")
-    public ResponseEntity<?> deleteById(@PathVariable("id") Long id){
+    public ResponseEntity<?> deleteById(@PathVariable("id") long id){
         service.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
