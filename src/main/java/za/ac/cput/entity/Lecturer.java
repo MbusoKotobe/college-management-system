@@ -25,6 +25,7 @@ public class Lecturer {
     Department department;
 
     protected Lecturer(){}
+
     private Lecturer(Builder builder){
         this.lecturerId = builder.lecturerId;
         this.firstName = builder.firstName;
