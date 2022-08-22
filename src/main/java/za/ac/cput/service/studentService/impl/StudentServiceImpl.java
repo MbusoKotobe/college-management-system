@@ -38,7 +38,7 @@ public class StudentServiceImpl implements IStudentService
     @Override
     public Optional<Student> read(Long id)
     {
-        return this.repo.findById(String.valueOf(id));
+        return this.repo.findById(id);
     }
 
     //deleting a student
@@ -57,12 +57,6 @@ public class StudentServiceImpl implements IStudentService
     @Override
     public void deleteById(Long id)
     {
-        repo.deleteById(String.valueOf(id));
-        Optional<Student> student = read(Long.valueOf(id));
-        if (student.isPresent())
-        {
-            delete(student.get());
-        }
-
+        repo.deleteById(id);
     }
 }
