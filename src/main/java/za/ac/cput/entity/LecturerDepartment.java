@@ -11,13 +11,8 @@ import javax.validation.constraints.NotNull;
  * Date: 08 April 2022
  */
 
-@Entity
 public class LecturerDepartment {
-    @Id
-    @NotNull
     private long lecturerId;
-    @Id
-    @NotNull
     private int departmentId;
 
     protected LecturerDepartment(){}

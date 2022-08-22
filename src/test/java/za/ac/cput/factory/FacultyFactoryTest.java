@@ -10,7 +10,7 @@ class FacultyFactoryTest
     @Test
     void createFaculty ()
     {
-        Faculty faculty = FacultyFactory.createFaculty("Informatics and Design", "Information and visual designing");
+        Faculty faculty = FacultyFactory.build(12,"Informatics and Design", "Information and visual designing");
         assertNotNull(faculty);
     }
 }

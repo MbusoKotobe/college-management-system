@@ -11,7 +11,7 @@ import za.ac.cput.utility.Utilities;
 
 public class LecturerFactory {
     public static Lecturer createLecturer(String firstName, String lastName){
-        long lecturerId = Utilities.generateId();
+        long lecturerId = Long.parseLong(Utilities.generateId());
         Lecturer lecturer = new Lecturer.Builder().setLectureId(lecturerId)
                 .setFirstName(firstName)
                 .setLastName(lastName)

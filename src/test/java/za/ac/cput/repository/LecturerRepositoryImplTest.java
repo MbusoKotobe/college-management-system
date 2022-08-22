@@ -9,8 +9,8 @@ import za.ac.cput.factory.LecturerFactory;
 import static org.junit.jupiter.api.Assertions.*;
 @TestMethodOrder(MethodOrderer.MethodName.class)
 class LecturerRepositoryImplTest {
-    private static LecturerRepositoryImpl repository = LecturerRepositoryImpl.createLectureRepository();
-    private static Lecturer lecturer = LecturerFactory.createLecturer("Arinze", "Anikwue");
+    private static final LecturerRepositoryImpl repository = LecturerRepositoryImpl.createLectureRepository();
+    private static final Lecturer lecturer = LecturerFactory.createLecturer("Arinze", "Anikwue");
 
     @Test
     void a_create() {

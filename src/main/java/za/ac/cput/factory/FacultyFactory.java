@@ -4,9 +4,10 @@ import za.ac.cput.entity.Faculty;
 
 public class FacultyFactory
 {
-    public static Faculty createFaculty(String facultyName, String facultyDescription)
+    public static Faculty build(int facultyId, String facultyName, String facultyDescription)
     {
-        return new Faculty.Builder().setFacultyName(facultyName)
+        return new Faculty.Builder().setFacultyId(facultyId)
+                                    .setFacultyName(facultyName)
                                     .setFacultyDescription(facultyDescription)
                                     .build();
     }
