@@ -13,11 +13,11 @@ import za.ac.cput.entity.StudentCourse;
 public class StudentCourseFactory
 {
 
-    public static StudentCourse createStudentCourse(int courseId)
+    public static StudentCourse createStudentCourse(long studentNumber, int courseId)
     {
 
         StudentCourse studentCourse  = new StudentCourse.Builder()
-                .setStudentNumber(218568202)
+                .setStudentNumber(studentNumber)
                 .setCourseId(courseId)
                 .build();
         return studentCourse;

@@ -8,11 +8,8 @@ ADP 3 Assignment Group1
 implementation
 */
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import za.ac.cput.entity.Student;
-import java.util.Set;
-
-public interface IStudentRepository extends IRepository<Student, String>
+public interface IStudentRepository extends JpaRepository<Student, String>
 {
-    //CRUD
-    public Set<Student> getAll();
 }
