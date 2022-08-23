@@ -60,9 +60,4 @@ class StudentServiceImplTest
         List<Student> listStudent = this.studentService.findAll();
         assertEquals(0, listStudent.size());
     }
-
-    @Test
-    @Disabled
-    void deleteById()
-    {}
 }
