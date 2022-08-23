@@ -3,10 +3,12 @@ package za.ac.cput.service;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.lang.Nullable;
 import za.ac.cput.entity.Student;
 import za.ac.cput.factory.StudentFactory;
 import za.ac.cput.service.studentService.IStudentService;
 
+import javax.xml.bind.ValidationException;
 import java.util.List;
 import java.util.Optional;
 
@@ -23,12 +25,14 @@ class StudentServiceImplTest
     private IStudentService studentService;
 
     @Test
+    @Nullable
     @Order(1)
     void save()
     {
         Student created = this.studentService.save(this.student);
         assertEquals(this.student, created);
         System.out.println(created);
+
     }
 
     @Test
