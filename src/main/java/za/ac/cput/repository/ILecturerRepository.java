@@ -5,10 +5,8 @@ package za.ac.cput.repository;
  * @Author: Anele Aneal Tose - 216079292
  * Date: 09 April 2022
  */
+import org.springframework.data.jpa.repository.JpaRepository;
 import za.ac.cput.entity.Lecturer;
 
-import java.util.Set;
-
-public interface ILecturerRepository extends IRepository<Lecturer,Long>{
-    Set<Lecturer> getAll();
+public interface ILecturerRepository extends JpaRepository<Lecturer, Long> {
 }
