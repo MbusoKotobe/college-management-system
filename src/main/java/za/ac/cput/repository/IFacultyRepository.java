@@ -9,5 +9,5 @@ import za.ac.cput.entity.Faculty;
  * @author Mbuso Kotobe (218040385)
  * Date: 14 August 2022
  */
-public interface IFacultyRepository extends JpaRepository<Faculty, Integer> {
+public interface IFacultyRepository extends JpaRepository<Faculty, Long> {
 }

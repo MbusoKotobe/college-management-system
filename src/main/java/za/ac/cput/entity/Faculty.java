@@ -16,11 +16,11 @@ public class Faculty
 {
     @Id
     @GeneratedValue
-    int facultyId;
+    private long facultyId;
 
-    String facultyName;
+    private String facultyName;
 
-    String facultyDescription;
+    private String facultyDescription;
 
     protected Faculty(){ }
 
@@ -31,7 +31,7 @@ public class Faculty
         this.facultyDescription = faculty.facultyDescription;
     }
 
-    public int getFacultyId ()
+    public long getFacultyId ()
     {
         return facultyId;
     }
@@ -72,11 +72,11 @@ public class Faculty
     }
 
     public static class Builder{
-        int facultyId;
+        long facultyId;
         String facultyName;
         String facultyDescription;
 
-        public Builder setFacultyId (int facultyId)
+        public Builder setFacultyId (long facultyId)
         {
             this.facultyId = facultyId;
             return this;

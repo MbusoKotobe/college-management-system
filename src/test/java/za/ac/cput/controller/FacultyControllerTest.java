@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * @author Mbuso Kotobe (218040385)
  * Date: 21 August 2022
  */
-@SpringBootTest
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class FacultyControllerTest {
 

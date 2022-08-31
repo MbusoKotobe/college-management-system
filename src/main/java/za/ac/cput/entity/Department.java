@@ -17,11 +17,11 @@ import static javax.persistence.CascadeType.PERSIST;
 @Entity
 public class Department {
     @Id
-    int departmentId;
+    private int departmentId;
 
-    String departmentName;
+    private String departmentName;
 
-    String departmentDescription;
+    private String departmentDescription;
 
     @OneToMany(cascade = { PERSIST, MERGE })
     Set<Faculty> faculty;

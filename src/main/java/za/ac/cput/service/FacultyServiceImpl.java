@@ -26,7 +26,7 @@ public class FacultyServiceImpl implements IFacultyService {
     }
 
     @Override
-    public Optional<Faculty> read(Integer id)
+    public Optional<Faculty> read(Long id)
     {
         return repository.findById(id);
     }
@@ -44,7 +44,7 @@ public class FacultyServiceImpl implements IFacultyService {
     }
 
     @Override
-    public void deleteById(int facultyId)
+    public void deleteById(Long facultyId)
     {
         repository.deleteById(facultyId);
     }
