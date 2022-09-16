@@ -1,13 +1,13 @@
 package za.ac.cput.repository;
 
+import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import za.ac.cput.entity.Department;
 import za.ac.cput.factory.DepartmentFactory;
 
-import static org.junit.jupiter.api.Assertions.*;
 
-class DepartmentRepositoryImplTest
-{
+class DepartmentRepositoryImplTest {
+
     private final IDepartmentRepository repository = DepartmentRepositoryImpl.getDepartmentRepository();
     private final Department department = DepartmentFactory.createDepartment("Information Technology", "Information management");
 
@@ -48,4 +48,5 @@ class DepartmentRepositoryImplTest
         boolean operationStatus = repository.delete(department.getDeparmentId());
         assertTrue(operationStatus);
     }
+
 }
