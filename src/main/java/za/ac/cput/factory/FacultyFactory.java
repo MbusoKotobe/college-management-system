@@ -1,6 +1,6 @@
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Faculty;
+import za.ac.cput.repository.entity.Faculty;
 
 public class FacultyFactory
 {

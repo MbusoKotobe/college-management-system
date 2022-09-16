@@ -2,7 +2,7 @@ package za.ac.cput.repository;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import za.ac.cput.entity.Department;
+import za.ac.cput.repository.entity.Department;
 import za.ac.cput.factory.DepartmentFactory;
 
 

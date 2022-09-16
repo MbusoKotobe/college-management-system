@@ -1,4 +1,4 @@
-package za.ac.cput.entity;
+package za.ac.cput.repository.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
