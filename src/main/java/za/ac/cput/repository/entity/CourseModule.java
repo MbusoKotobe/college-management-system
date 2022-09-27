@@ -3,7 +3,7 @@ Entity for the CourseModule
 Author: Jody Kearns (209023651)
 Date: 06 April 2022 */
 
-package za.ac.cput.entity;
+package za.ac.cput.repository.entity;
 
 public class CourseModule {
     private int courseId;

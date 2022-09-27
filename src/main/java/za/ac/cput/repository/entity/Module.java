@@ -1,4 +1,4 @@
-package za.ac.cput.entity;
+package za.ac.cput.repository.entity;
 
 /*
  * Zintle Magwaxaza (218109911)

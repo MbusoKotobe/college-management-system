@@ -3,7 +3,7 @@ Entity for the Course
 Author: Jody Kearns (209023651)
 Date: 06 April 2022 */
 
-package za.ac.cput.entity;
+package za.ac.cput.repository.entity;
 
 public class Course {
     private int courseId;

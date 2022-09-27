@@ -10,9 +10,8 @@ import static javax.persistence.CascadeType.PERSIST;
 
 /***
  * Department.java
- * Entity for the Department
- * Author: Mbuso Kotobe (218040385)
- * Date: 06 April 2022
+ * @author Elvis Ndlangamandla (213063964)
+ * Date: 21 August 2022
  */
 @Entity
 public class Department {
