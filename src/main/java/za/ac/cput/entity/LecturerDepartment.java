@@ -1,9 +1,5 @@
 package za.ac.cput.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
-
 /**
  * LecturerDepartment.java;
  * This is a bridging entity between Lecturer and Department domain classes

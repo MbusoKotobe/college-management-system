@@ -7,7 +7,7 @@ package za.ac.cput.factory;
  */
 
 
-import za.ac.cput.repository.entity.Module;
+import za.ac.cput.entity.Module;
 import za.ac.cput.utility.Utilities;
 
 
