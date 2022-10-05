@@ -52,7 +52,7 @@ public class FacultyController {
     }
 
     @GetMapping("read/{facultyId}")
-    public ResponseEntity<Faculty> read(@PathVariable int facultyId)
+    public ResponseEntity<Faculty> read(@PathVariable long facultyId)
     {
         Faculty facultyReturned = service.read(facultyId)
         .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
@@ -66,7 +66,7 @@ public class FacultyController {
     }
 
     @DeleteMapping("delete/{facultyId}")
-    public ResponseEntity<Void> deleteById(@PathVariable int facultyId)
+    public ResponseEntity<Void> deleteById(@PathVariable long facultyId)
     {
         service.deleteById(facultyId);
         return ResponseEntity.noContent().build();

@@ -47,7 +47,7 @@ public class FacultyServiceImplTest {
     @Test
     void read()
     {
-        int facultyId = 1;
+        long facultyId = 1;
         Optional<Faculty> result = null;
 
         result = service.read(facultyId);
@@ -71,7 +71,7 @@ public class FacultyServiceImplTest {
     @Test
     void deleteById()
     {
-        int facultyId = 1;
+        long facultyId = 1;
         Optional<Faculty> result = null;
 
         service.deleteById(facultyId);
