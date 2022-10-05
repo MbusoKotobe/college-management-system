@@ -5,7 +5,7 @@ Date: 07 April 2022 */
 
 package za.ac.cput.repository;
 
-import za.ac.cput.repository.entity.Course;
+import za.ac.cput.entity.Course;
 import java.util.HashSet;
 import java.util.Set;
 

@@ -6,7 +6,7 @@
  */
 
 package za.ac.cput.repository;
-import za.ac.cput.repository.entity.StudentModule;
+import za.ac.cput.entity.StudentModule;
 import java.util.Set;
 
 public interface IStudentModuleRepository {

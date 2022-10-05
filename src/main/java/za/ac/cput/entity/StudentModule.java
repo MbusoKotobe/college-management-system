@@ -1,4 +1,4 @@
-package za.ac.cput.repository.entity;
+package za.ac.cput.entity;
 
 
 /*

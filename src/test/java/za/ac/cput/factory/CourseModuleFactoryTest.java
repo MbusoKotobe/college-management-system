@@ -6,7 +6,7 @@ Date: 09 April 2022 */
 package za.ac.cput.factory;
 
 import org.junit.jupiter.api.Test;
-import za.ac.cput.repository.entity.CourseModule;
+import za.ac.cput.entity.CourseModule;
 
 import static org.junit.jupiter.api.Assertions.*;
 

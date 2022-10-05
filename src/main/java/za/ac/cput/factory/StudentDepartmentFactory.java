@@ -7,7 +7,7 @@
  */
 package za.ac.cput.factory;
 
-import za.ac.cput.repository.entity.StudentDepartment;
+import za.ac.cput.entity.StudentDepartment;
 
 
 

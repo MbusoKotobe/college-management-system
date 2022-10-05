@@ -5,7 +5,7 @@ Date: 06 April 2022 */
 
 package za.ac.cput.factory;
 
-import za.ac.cput.repository.entity.CourseModule;
+import za.ac.cput.entity.CourseModule;
 
 public class CourseModuleFactory {
     public static CourseModule createCourseModule(int courseId, String moduleId){

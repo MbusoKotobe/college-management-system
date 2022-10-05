@@ -5,7 +5,7 @@
  * Date: 06 April 2022
  *
  */
-package za.ac.cput.repository.entity;
+package za.ac.cput.entity;
 
 public class StudentDepartment {
     private long studentNumber;

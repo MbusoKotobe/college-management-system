@@ -7,7 +7,7 @@
 
 
 package za.ac.cput.repository;
-import za.ac.cput.repository.entity.StudentModule;
+import za.ac.cput.entity.StudentModule;
 import java.util.HashSet;
 import java.util.Set;
 

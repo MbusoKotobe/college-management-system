@@ -7,7 +7,6 @@ package za.ac.cput.repository;
  */
 import org.springframework.data.jpa.repository.JpaRepository;
 import za.ac.cput.entity.Lecturer;
-import za.ac.cput.entity.LecturerDepartment;
 
 public interface ILecturerDepartmentRepository extends JpaRepository<Lecturer, Long> {
 
