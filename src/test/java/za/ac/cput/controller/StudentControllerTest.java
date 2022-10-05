@@ -101,6 +101,23 @@ class StudentControllerTest
     @Test
     void delete()
     {
+        //TODO: Please include a test here to ensure that it works.
+        /**
+         * I know in class they said that delete doesn't return anything
+         * for security reasons. You don't want to let your user know whether
+         * the deletion process was successful or not BUT for development purposes
+         * it is recommended we test thoroughly and make sure everything works.
+         *
+         * To Test this, After the Deletion of a record, you could call read(),
+         * using the ID of the deleted object and check if the status code returned
+         * by read is 404 (NOT FOUND). Check FacultyControllerTest for Reference.
+         *
+         * OR
+         *
+         * You could call find-all() and check if the size of the returned records
+         * matches what you expect which is 0 because you just deleted the only
+         * record that existed in the database.
+         * */
         String Url = url + "delete/" + this.student.getStudentNumber();
         System.out.println(Url);
         this.restTemplate.delete(Url);

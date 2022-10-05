@@ -49,3 +49,5 @@ public class FacultyServiceImpl implements IFacultyService {
         repository.deleteById(facultyId);
     }
 }
+
+
