@@ -5,9 +5,8 @@ Date: 07 April 2022 */
 
 package za.ac.cput.repository;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import za.ac.cput.entity.Course;
-import java.util.Set;
 
-public interface ICourseRepository extends IRepository<Course, Integer>{
-    Set<Course> getAll();
+public interface ICourseRepository extends JpaRepository<Course, String> {
 }

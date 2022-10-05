@@ -4,15 +4,27 @@ Author: Jody Kearns (209023651)
 Date: 06 April 2022 */
 
 package za.ac.cput.factory;
-
 import za.ac.cput.entity.Course;
+import za.ac.cput.utility.Utilities;
+import java.util.Iterator;
+import java.util.Set;
+import za.ac.cput.entity.Module;
 
 public class CourseFactory {
-    public static Course createCourse(int courseId, String courseName, String courseDescription){
-        Course course = new Course.Builder().setCourseId(courseId)
-                .setCourseName(courseName)
-                .setCourseDescription(courseDescription)
-                .build();
-        return course;
+    public static Course createCourse(String courseId, String courseName, String courseDescription, Set<Module> modules){
+        Utilities.checkStringParam("courseId", courseId);
+        Utilities.checkStringParam("courseName", courseName);
+        Utilities.checkStringParam("courseDescription", courseDescription);
+
+        Iterator<Module> iterate = modules.iterator();
+        while (iterate.hasNext()){
+            Utilities.checkIfObjectNull("module", iterate);
+        }
+
+        return Course.builder()
+                .courseId(courseId)
+                .courseName(courseName)
+                .courseDescription(courseDescription)
+                .modules(modules).build();
     }
 }
