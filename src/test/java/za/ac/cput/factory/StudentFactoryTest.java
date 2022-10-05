@@ -9,7 +9,7 @@ ADP 3 Assignment Group1
 
 
 import org.junit.jupiter.api.Test;
-import za.ac.cput.entity.Student;
+import za.ac.cput.repository.entity.Student;
 
 import static org.junit.jupiter.api.Assertions.*;
 
