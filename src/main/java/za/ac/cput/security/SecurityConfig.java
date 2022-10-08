@@ -34,7 +34,7 @@ public class SecurityConfig {
 
         manager.createUser(User.withUsername("admin")
                .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f293"))
-               .roles("ADMIN")
+               .roles("USER", "ADMIN")
                .build()
         );
 
@@ -46,11 +46,15 @@ public class SecurityConfig {
     {
         http.httpBasic()
             .and().csrf().disable().formLogin().disable()
+            //URL Path Matchers for the Faculty Domain.
             .authorizeRequests()
-            .antMatchers(HttpMethod.POST, "college-management-system/**/create").hasAnyRole("ADMIN")
-            .antMatchers(HttpMethod.DELETE, "college-management-system/**/delete").hasAnyRole("ADMIN")
-            .antMatchers(HttpMethod.GET, "college-management-system/**/read").hasAnyRole("USER")
-            .antMatchers(HttpMethod.GET, "college-management-system/**/find-all").hasAnyRole("USER")
+            .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/faculty/delete").hasRole("ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/faculty/delete/{facultyId}").hasRole("ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/faculty/read").hasAnyRole("USER", "ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/faculty/find-all").hasAnyRole("USER", "ADMIN")
+            //Add your Path Matchers for your domains here and put a comment in place to signal
+            //to other team members that your code begins here.
             .and()
             .sessionManagement()
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
