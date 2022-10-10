@@ -22,7 +22,7 @@ public class CourseController {
         this.courseService = courseService;
     }
 
-    @PostMapping("save")
+    @PostMapping("create")
     @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<Course> save(@RequestBody Course course) {
         log.info("Save request for: {}", course);
@@ -52,7 +52,7 @@ public class CourseController {
         return ResponseEntity.ok(course);
     }
 
-    @GetMapping
+    @GetMapping("find-all")
     @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<List<Course>> readAll(){
         List<Course> courseList = this.courseService.findAll();
