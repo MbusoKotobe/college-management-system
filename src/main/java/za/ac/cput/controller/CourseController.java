@@ -22,7 +22,7 @@ public class CourseController {
         this.courseService = courseService;
     }
 
-    @PostMapping("create")
+    @PostMapping("save")
     @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<Course> save(@RequestBody Course course) {
         log.info("Save request for: {}", course);
