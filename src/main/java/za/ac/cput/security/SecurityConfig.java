@@ -55,6 +55,13 @@ public class SecurityConfig {
             .antMatchers(HttpMethod.GET, "/**/faculty/find-all").hasAnyRole("USER", "ADMIN")
             //Add your Path Matchers for your domains here and put a comment in place to signal
             //to other team members that your code begins here.
+
+             //URl Path Matchers for the Student Domain endPoint
+                .antMatchers(HttpMethod.POST, "/**/student/save").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.DELETE, "/**/student/delete/{id}").hasAnyRole("ADMIN")
+                .antMatchers(HttpMethod.GET, "/**/student/read").hasAnyRole("USER", "ADMIN")
+                .antMatchers(HttpMethod.GET, "/**/student/find-all").hasAnyRole("USER", "ADMIN")
+
             .and()
             .sessionManagement()
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
