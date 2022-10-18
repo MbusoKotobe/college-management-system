@@ -8,6 +8,7 @@ import java.util.Set;
 import static javax.persistence.CascadeType.MERGE;
 import static javax.persistence.CascadeType.PERSIST;
 
+
 /***
  * Department.java
  * @author Elvis Ndlangamandla (213063964)
@@ -16,6 +17,8 @@ import static javax.persistence.CascadeType.PERSIST;
 @Entity
 public class Department {
     @Id
+    @GeneratedValue
+
     private int departmentId;
 
     private String departmentName;
@@ -23,7 +26,7 @@ public class Department {
     private String departmentDescription;
 
     @OneToMany(cascade = { PERSIST, MERGE })
-    Set<Faculty> faculty;
+    Set<Department> departments;
 
     protected Department() {  }
 
@@ -49,9 +52,19 @@ public class Department {
         return departmentDescription;
     }
 
-    public Set<Faculty> getFaculty ()
+    public Set<Department> getFaculty ()
     {
-        return faculty;
+        return departments;
+    }
+    @Override
+
+    public String toString() {
+        return "Department{" +
+                "departmentId=" + departmentId +
+                ", departmentName='" + departmentName + '\'' +
+                ", departmentDescription='" + departmentDescription + '\'' +
+                ", departments=" + departments +
+                '}';
     }
 
     public static class Builder{
