@@ -13,7 +13,7 @@ import za.ac.cput.utility.Utilities;
 
     public class ModuleFactory {
 
-            public static Module createModule (String moduleName,String moduleDescription)
+            public static Module createModule (String moduleId, String moduleName,String moduleDescription)
             {
                 String ModuleId = Utilities.generateId();
 

@@ -12,9 +12,11 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true, jsr250Enabled = true)
 public class SecurityConfig {
+
 
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder() {
@@ -30,6 +32,7 @@ public class SecurityConfig {
                 .build()
         );
         manager.createUser(User.withUsername("faculty-admin")
+<<<<<<< HEAD
                 .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f293"))
                 .roles("USER", "ADMIN")
                 .build()
@@ -38,6 +41,24 @@ public class SecurityConfig {
                 .password(bCryptPasswordEncoder.encode("5678"))
                 .roles("USER", "ADMIN")
                 .build()
+=======
+               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f293"))
+               .roles("USER", "FACULTY-ADMIN")
+               .build()
+        );
+        
+        manager.createUser(User.withUsername("student-user")
+               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f294"))
+               .roles("USER")
+   
+            .build()
+        );
+
+        manager.createUser(User.withUsername("student-admin")
+               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f295"))
+               .roles("USER", "STUDENT-ADMIN")
+               .build()
+>>>>>>> fb4cd54187edcfaaa8e8b48296ae6d2fc8fd1d09
         );
         return manager;
     }
@@ -48,6 +69,7 @@ public class SecurityConfig {
             .and().csrf().disable().formLogin().disable()
             //URL Path Matchers for the Faculty Domain.
             .authorizeRequests()
+<<<<<<< HEAD
             .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("ADMIN")
             .antMatchers(HttpMethod.DELETE, "/**/faculty/delete").hasRole("ADMIN")
             .antMatchers(HttpMethod.DELETE, "/**/faculty/delete/{facultyId}").hasRole("ADMIN")
@@ -59,11 +81,28 @@ public class SecurityConfig {
             .antMatchers(HttpMethod.DELETE, "/**/lecturer/delete/{lecturerId}").hasRole("ADMIN")
             .antMatchers(HttpMethod.GET, "/**/lecturer/read").hasAnyRole("USER", "ADMIN")
             .antMatchers(HttpMethod.GET, "/**/lecturer/find-all").hasAnyRole("USER", "ADMIN")
+=======
+            .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("FACULTY-ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/faculty/delete").hasRole("FACULTY-ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/faculty/delete/{facultyId}").hasRole("FACULTY-ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/faculty/read").hasAnyRole("USER", "FACULTY-ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/faculty/find-all").hasAnyRole("USER", "FACULTY-ADMIN")
+>>>>>>> fb4cd54187edcfaaa8e8b48296ae6d2fc8fd1d09
             //Add your Path Matchers for your domains here and put a comment in place to signal
             //to other team members that your code begins here.
+
+             //URl Path Matchers for the Student Domain endPoint
+            .antMatchers(HttpMethod.POST, "/**/student/save").hasAnyRole("STUDENT-ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/student/delete/{id}").hasAnyRole("STUDENT-ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/student/read").hasAnyRole("USER", "STUDENT-ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/student/find-all").hasAnyRole("USER", "STUDENT-ADMIN")
+
+            .and()
+            .cors()
             .and()
             .sessionManagement()
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         return http.build();
     }
 }
+

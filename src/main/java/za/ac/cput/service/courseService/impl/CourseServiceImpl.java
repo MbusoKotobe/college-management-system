@@ -21,8 +21,7 @@ public class CourseServiceImpl implements ICourseService {
     @Override
     public Course save(Course course) throws IllegalArgumentException {
 
-        Course validatedCourse;
-        validatedCourse = CourseFactory.createCourse(
+        Course validatedCourse = CourseFactory.createCourse(
                 course.getCourseId(),
                 course.getCourseName(),
                 course.getCourseDescription(),
