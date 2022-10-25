@@ -52,7 +52,7 @@ public class CourseController {
         return ResponseEntity.ok(course);
     }
 
-    @GetMapping
+    @GetMapping("find-all")
     @CrossOrigin(origins = "http://localhost:4200")
     public ResponseEntity<List<Course>> readAll(){
         List<Course> courseList = this.courseService.findAll();
