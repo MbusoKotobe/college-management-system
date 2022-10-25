@@ -69,6 +69,13 @@ public class SecurityConfig {
             .antMatchers(HttpMethod.DELETE, "/**/faculty/delete/{facultyId}").hasRole("ADMIN")
             .antMatchers(HttpMethod.GET, "/**/faculty/read").hasAnyRole("USER", "ADMIN")
             .antMatchers(HttpMethod.GET, "/**/faculty/find-all").hasAnyRole("USER", "ADMIN")
+            //URL Path Matchers for Course Domain
+            .antMatchers(HttpMethod.POST,"/**/course/save").hasRole("ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/course/delete").hasRole("ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/course/delete/{id}").hasRole("ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/course/read/{id}").hasAnyRole("USER", "ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/course/find-all").hasAnyRole("USER", "ADMIN")
+
             //Add your Path Matchers for your domains here and put a comment in place to signal
             //to other team members that your code begins here.
 
