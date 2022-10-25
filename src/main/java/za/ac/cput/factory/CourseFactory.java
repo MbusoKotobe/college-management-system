@@ -16,9 +16,8 @@ public class CourseFactory {
         Utilities.checkStringParam("courseName", courseName);
         Utilities.checkStringParam("courseDescription", courseDescription);
 
-        Iterator<Module> iterate = modules.iterator();
-        while (iterate.hasNext()){
-            Utilities.checkIfObjectNull("module", iterate);
+        for (Module module : modules) {
+            Utilities.checkIfObjectNull("module", module);
         }
 
         return Course.builder()

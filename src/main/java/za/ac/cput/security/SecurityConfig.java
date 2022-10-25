@@ -41,14 +41,14 @@ public class SecurityConfig {
         );
         
         manager.createUser(User.withUsername("student-user")
-               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f292"))
+               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f294"))
                .roles("USER")
    
             .build()
         );
 
         manager.createUser(User.withUsername("student-admin")
-               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f293"))
+               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f295"))
                .roles("USER", "STUDENT-ADMIN")
                .build()
         );
@@ -72,10 +72,10 @@ public class SecurityConfig {
             //to other team members that your code begins here.
 
              //URl Path Matchers for the Student Domain endPoint
-                .antMatchers(HttpMethod.POST, "/**/student/save").hasAnyRole("STUDENT-ADMIN")
-                .antMatchers(HttpMethod.DELETE, "/**/student/delete/{id}").hasAnyRole("STUDENT-ADMIN")
-                .antMatchers(HttpMethod.GET, "/**/student/read").hasAnyRole("USER", "STUDENT-ADMIN")
-                .antMatchers(HttpMethod.GET, "/**/student/find-all").hasAnyRole("USER", "STUDENT-ADMIN")
+            .antMatchers(HttpMethod.POST, "/**/student/save").hasAnyRole("STUDENT-ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/student/delete/{id}").hasAnyRole("STUDENT-ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/student/read").hasAnyRole("USER", "STUDENT-ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/student/find-all").hasAnyRole("USER", "STUDENT-ADMIN")
 
             .and()
             .cors()
