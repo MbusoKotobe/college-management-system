@@ -6,12 +6,12 @@
  */
 
 package za.ac.cput.repository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import za.ac.cput.entity.Faculty;
 import za.ac.cput.entity.StudentModule;
 import java.util.Set;
 
-public interface IStudentModuleRepository {
-    Set<StudentModule> getAll();
-   StudentModule create (StudentModule studentModule);
-   StudentModule read (long studentNumber, String moduleId);
-   boolean delete (long studentNumber, String moduleId);
+public interface IStudentModuleRepository extends JpaRepository<StudentModule, String> {
+
 }
+

@@ -12,9 +12,11 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true, jsr250Enabled = true)
 public class SecurityConfig {
+
 
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder()
@@ -41,7 +43,8 @@ public class SecurityConfig {
         manager.createUser(User.withUsername("student-user")
                .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f292"))
                .roles("USER")
-               .build()
+   
+            .build()
         );
 
         manager.createUser(User.withUsername("student-admin")
@@ -61,6 +64,7 @@ public class SecurityConfig {
             //URL Path Matchers for the Faculty Domain.
             .authorizeRequests()
             .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("ADMIN")
+            .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("ADMIN")
             .antMatchers(HttpMethod.DELETE, "/**/faculty/delete").hasRole("ADMIN")
             .antMatchers(HttpMethod.DELETE, "/**/faculty/delete/{facultyId}").hasRole("ADMIN")
             .antMatchers(HttpMethod.GET, "/**/faculty/read").hasAnyRole("USER", "ADMIN")
@@ -75,8 +79,11 @@ public class SecurityConfig {
                 .antMatchers(HttpMethod.GET, "/**/student/find-all").hasAnyRole("USER", "STUDENT-ADMIN")
 
             .and()
+            .cors()
+            .and()
             .sessionManagement()
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         return http.build();
     }
 }
+
