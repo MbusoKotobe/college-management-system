@@ -13,7 +13,7 @@ import za.ac.cput.service.IModuleService;
 import java.util.List;
 @Slf4j
 @RestController
-@RequestMapping("college-management-system/Module/")
+@RequestMapping("college-management-system/module/")
 public class ModuleController {
 
     private final IModuleService moduleService;
@@ -27,14 +27,14 @@ public class ModuleController {
         @PostMapping("save")
         public ResponseEntity<Module> save (@RequestBody Module module)
         {
-            log.info("Save Request: ", module);
+            log.info("Save Request: {}", module);
 
             Module ValidateModule;
             try {
                 ValidateModule = ModuleFactory.createModule(module.getModuleId(),module.getModuleName(),
                         module.getModuleDescription());
             } catch (IllegalArgumentException i) {
-                log.info("Save error: ", i.getMessage());
+                log.info("Save error: {}", i.getMessage());
                 throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
             }
             Module save = moduleService.save(ValidateModule);
@@ -44,10 +44,10 @@ public class ModuleController {
 
 
         @GetMapping("read/{id}")
-        public ResponseEntity<Module> read (@PathVariable String moduleId)
+        public ResponseEntity<Module> read (@PathVariable String id)
         {
-            log.info("Read Request: ", moduleId);
-            Module module = this.moduleService.read(moduleId)
+            log.info("Read Request: {}", id);
+            Module module = this.moduleService.read(id)
                     .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
             return ResponseEntity.ok(module);
         }
@@ -61,10 +61,10 @@ public class ModuleController {
 
 
         @DeleteMapping("delete/{id}")
-        public ResponseEntity<Void> delete (@PathVariable String moduleId)
+        public ResponseEntity<Void> delete (@PathVariable String id)
         {
-            log.info("Delete Req: ", moduleId);
-            this.moduleService.deleteById(moduleId);
+            log.info("Delete Req: {}", id);
+            this.moduleService.deleteById(id);
             return ResponseEntity.noContent().build();
         }
     }
