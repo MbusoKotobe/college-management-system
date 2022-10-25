@@ -36,7 +36,7 @@ public class SecurityConfig {
 
         manager.createUser(User.withUsername("faculty-admin")
                .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f293"))
-               .roles("USER", "ADMIN")
+               .roles("USER", "FACULTY-ADMIN")
                .build()
         );
 
@@ -50,12 +50,11 @@ public class SecurityConfig {
             .and().csrf().disable().formLogin().disable()
             //URL Path Matchers for the Faculty Domain.
             .authorizeRequests()
-            .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("ADMIN")
-            .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("ADMIN")
-            .antMatchers(HttpMethod.DELETE, "/**/faculty/delete").hasRole("ADMIN")
-            .antMatchers(HttpMethod.DELETE, "/**/faculty/delete/{facultyId}").hasRole("ADMIN")
-            .antMatchers(HttpMethod.GET, "/**/faculty/read").hasAnyRole("USER", "ADMIN")
-            .antMatchers(HttpMethod.GET, "/**/faculty/find-all").hasAnyRole("USER", "ADMIN")
+            .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("FACULTY-ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/faculty/delete").hasRole("FACULTY-ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/faculty/delete/{facultyId}").hasRole("FACULTY-ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/faculty/read").hasAnyRole("USER", "FACULTY-ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/faculty/find-all").hasAnyRole("USER", "FACULTY-ADMIN")
             //Add your Path Matchers for your domains here and put a comment in place to signal
             //to other team members that your code begins here.
             .and()
