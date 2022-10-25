@@ -12,9 +12,11 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true, jsr250Enabled = true)
 public class SecurityConfig {
+
 
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder()
@@ -49,6 +51,7 @@ public class SecurityConfig {
             //URL Path Matchers for the Faculty Domain.
             .authorizeRequests()
             .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("ADMIN")
+            .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("ADMIN")
             .antMatchers(HttpMethod.DELETE, "/**/faculty/delete").hasRole("ADMIN")
             .antMatchers(HttpMethod.DELETE, "/**/faculty/delete/{facultyId}").hasRole("ADMIN")
             .antMatchers(HttpMethod.GET, "/**/faculty/read").hasAnyRole("USER", "ADMIN")
@@ -56,8 +59,11 @@ public class SecurityConfig {
             //Add your Path Matchers for your domains here and put a comment in place to signal
             //to other team members that your code begins here.
             .and()
+            .cors()
+            .and()
             .sessionManagement()
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         return http.build();
     }
+
 }
