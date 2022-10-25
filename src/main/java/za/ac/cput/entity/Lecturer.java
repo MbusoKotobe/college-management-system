@@ -1,6 +1,7 @@
 package za.ac.cput.entity;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.NotNull;
@@ -14,21 +15,19 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 public class Lecturer {
-    @NotNull
     @Id
+    @GeneratedValue
     private long lecturerId;
-    @NotNull
     private String firstName;
-    @NotNull
+    private String middleName;
     private String lastName;
-    @ManyToOne
-    Department department;
 
     protected Lecturer(){}
 
     private Lecturer(Builder builder){
         this.lecturerId = builder.lecturerId;
         this.firstName = builder.firstName;
+        this.middleName = builder.middleName;
         this.lastName = builder.lastName;
     }
 
@@ -39,6 +38,9 @@ public class Lecturer {
 
     public String getFirstName() {
         return firstName;
+    }
+    public String getMiddleName() {
+        return middleName;
     }
 
     public String getLastName() {
@@ -51,12 +53,14 @@ public class Lecturer {
         return "Lecturer{" +
                 "lecturerId='" + lecturerId + '\'' +
                 ", firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 '}';
     }
     public static class Builder{
         private long lecturerId;
         private String firstName;
+        private String middleName;
         private String lastName;
 
         public Builder setLectureId(long lectureId) {
@@ -68,6 +72,10 @@ public class Lecturer {
             this.firstName = firstName;
             return this;
         }
+        public Builder setMiddleName(String middleName) {
+            this.middleName = middleName;
+            return this;
+        }
 
         public Builder setLastName(String lastName) {
             this.lastName = lastName;
@@ -77,6 +85,7 @@ public class Lecturer {
         public  Builder copy(Lecturer lecturer){
             this.lecturerId = lecturer.lecturerId;
             this.firstName = lecturer.firstName;
+            this.middleName = lecturer.middleName;
             this.lastName = lecturer.lastName;
             return this;
         }

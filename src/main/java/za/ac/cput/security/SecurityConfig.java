@@ -17,30 +17,30 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
 
     @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder()
-    {
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     @Bean
-    public UserDetailsService userDetailsService(BCryptPasswordEncoder bCryptPasswordEncoder)
-    {
+    public UserDetailsService userDetailsService(BCryptPasswordEncoder bCryptPasswordEncoder) {
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
         manager.createUser(User.withUsername("faculty-user")
-               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f292"))
-               .roles("USER")
-               .build()
+                .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f292"))
+                .roles("USER")
+                .build()
         );
-
         manager.createUser(User.withUsername("faculty-admin")
-               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f293"))
-               .roles("USER", "ADMIN")
-               .build()
+                .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f293"))
+                .roles("USER", "ADMIN")
+                .build()
         );
-
+        manager.createUser(User.withUsername("lecturer-admin")
+                .password(bCryptPasswordEncoder.encode("5678"))
+                .roles("USER", "ADMIN")
+                .build()
+        );
         return manager;
     }
-
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception
     {
@@ -53,6 +53,12 @@ public class SecurityConfig {
             .antMatchers(HttpMethod.DELETE, "/**/faculty/delete/{facultyId}").hasRole("ADMIN")
             .antMatchers(HttpMethod.GET, "/**/faculty/read").hasAnyRole("USER", "ADMIN")
             .antMatchers(HttpMethod.GET, "/**/faculty/find-all").hasAnyRole("USER", "ADMIN")
+            //URL Path Matchers for the Lecturer Domain.
+            .antMatchers(HttpMethod.POST, "/**/lecturer/save").hasRole("ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/lecturer/delete").hasRole("ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/lecturer/delete/{lecturerId}").hasRole("ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/lecturer/read").hasAnyRole("USER", "ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/lecturer/find-all").hasAnyRole("USER", "ADMIN")
             //Add your Path Matchers for your domains here and put a comment in place to signal
             //to other team members that your code begins here.
             .and()
