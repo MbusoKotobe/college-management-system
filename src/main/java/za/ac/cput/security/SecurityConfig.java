@@ -39,6 +39,19 @@ public class SecurityConfig {
                .roles("USER", "FACULTY-ADMIN")
                .build()
         );
+        
+        manager.createUser(User.withUsername("student-user")
+               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f292"))
+               .roles("USER")
+   
+            .build()
+        );
+
+        manager.createUser(User.withUsername("student-admin")
+               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f293"))
+               .roles("USER", "STUDENT-ADMIN")
+               .build()
+        );
 
         return manager;
     }
@@ -57,6 +70,13 @@ public class SecurityConfig {
             .antMatchers(HttpMethod.GET, "/**/faculty/find-all").hasAnyRole("USER", "FACULTY-ADMIN")
             //Add your Path Matchers for your domains here and put a comment in place to signal
             //to other team members that your code begins here.
+
+             //URl Path Matchers for the Student Domain endPoint
+                .antMatchers(HttpMethod.POST, "/**/student/save").hasAnyRole("STUDENT-ADMIN")
+                .antMatchers(HttpMethod.DELETE, "/**/student/delete/{id}").hasAnyRole("STUDENT-ADMIN")
+                .antMatchers(HttpMethod.GET, "/**/student/read").hasAnyRole("USER", "STUDENT-ADMIN")
+                .antMatchers(HttpMethod.GET, "/**/student/find-all").hasAnyRole("USER", "STUDENT-ADMIN")
+
             .and()
             .cors()
             .and()
@@ -64,5 +84,5 @@ public class SecurityConfig {
             .sessionCreationPolicy(SessionCreationPolicy.STATELESS);
         return http.build();
     }
-
 }
+
