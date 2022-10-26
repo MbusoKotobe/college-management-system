@@ -3,10 +3,13 @@ package za.ac.cput.entity;
 
 import javax.persistence.*;
 
+import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
 
 import static javax.persistence.CascadeType.MERGE;
 import static javax.persistence.CascadeType.PERSIST;
+
 
 /***
  * Department.java
@@ -14,24 +17,34 @@ import static javax.persistence.CascadeType.PERSIST;
  * Date: 21 August 2022
  */
 @Entity
+@Table(name = "departments")
 public class Department {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private int departmentId;
 
+   @Column(name = "department_name")
     private String departmentName;
-
+    @Column(name = "department_description")
     private String departmentDescription;
 
     @OneToMany(cascade = { PERSIST, MERGE })
-    Set<Faculty> faculty;
+    private Set<Department> departments;
 
-    protected Department() {  }
+    @ManyToOne
+    Faculty faculty;
+
+    protected Department() {
+        departments=new HashSet<>();
+    }
 
     private Department(Builder department)
     {
         this.departmentId = department.departmentId;
         this.departmentName = department.departmentName;
         this.departmentDescription = department.departmentDescription;
+        this.faculty = department.faculty;
     }
 
     public int getDeparmentId ()
@@ -44,21 +57,49 @@ public class Department {
         return departmentName;
     }
 
+
+
     public String getDepartmentDescription ()
     {
         return departmentDescription;
     }
 
-    public Set<Faculty> getFaculty ()
+    public Set<Department> getFaculty ()
     {
-        return faculty;
+        return departments;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "departmentId=" + departmentId +
+                ", departmentName='" + departmentName + '\'' +
+                ", departmentDescription='" + departmentDescription + '\'' +
+                ", departments=" + departments +
+                ", faculty=" + faculty +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Department that = (Department) o;
+        return departmentId == that.departmentId && Objects.equals(departmentName, that.departmentName) && Objects.equals(departmentDescription, that.departmentDescription) && Objects.equals(departments, that.departments) && Objects.equals(faculty, that.faculty);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(departmentId, departmentName, departmentDescription, departments, faculty);
     }
 
     public static class Builder{
         int departmentId;
         String departmentName;
         String departmentDescription;
-        Set<Faculty> faculty;
+        Faculty faculty;
+
 
         public Builder setDeparmentId (int deparmentId)
         {
@@ -80,7 +121,7 @@ public class Department {
 
         public Builder setFaculty (Faculty faculty)
         {
-            this.faculty.add(faculty);
+            this.faculty= faculty;
             return this;
         }
 
@@ -89,6 +130,7 @@ public class Department {
             this.departmentId = department.departmentId;
             this.departmentName = department.departmentName;
             this.departmentDescription = department.departmentDescription;
+            this.faculty = department.faculty;
             return this;
         }
 
