@@ -14,12 +14,11 @@ public class StudentFactory
 {
     public static Student createStudent (String firstName, String middleName, String lastName, long studentNumber)
     {
-        Student student = new Student.Builder()
-                .setFirstName(firstName)
-                .setMiddleName(middleName)
-                .setLastName(lastName)
-                .setStudentNumber(studentNumber)
+        return Student.builder()
+                .firstName(firstName)
+                .middleName(middleName)
+                .lastName(lastName)
+                .studentNumber(studentNumber)
                 .build();
-        return student;
     }
 }

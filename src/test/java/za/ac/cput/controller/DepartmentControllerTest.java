@@ -7,7 +7,9 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.*;
 import za.ac.cput.entity.Department;
+import za.ac.cput.entity.Faculty;
 import za.ac.cput.factory.DepartmentFactory;
+import za.ac.cput.factory.FacultyFactory;
 
 import static org.junit.jupiter.api.Assertions.*;
 /***
@@ -39,7 +41,8 @@ class DepartmentControllerTest {
     @BeforeEach
     void setUp()
     {
-        department = DepartmentFactory.build(6, "Science", "The field of study concerned with discovering and describing the world around us by observing and experimenting.");
+        Faculty faculty = FacultyFactory.build(12,"Informatics and Design", "Information and visual designing");
+        department = DepartmentFactory.build(6, "Science", "The field of study concerned with discovering and describing the world around us by observing and experimenting.", faculty);
         baseUrl = "http://localhost:" + portNumber + "/" + "college-management-system/faculty/";
     }
 
@@ -116,7 +119,7 @@ class DepartmentControllerTest {
     void delete()
     {
         String url = baseUrl.concat("delete");
-        String readUrl = baseUrl.concat("read/") + department.getDeparmentId();
+        String readUrl = baseUrl.concat("read/") + department.getDepartmentId();
         HttpHeaders headers = new HttpHeaders();
         HttpEntity<String> entity = new HttpEntity<String>(null, headers);
         ResponseEntity<Department> response = null;

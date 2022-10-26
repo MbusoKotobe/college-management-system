@@ -2,6 +2,7 @@ package za.ac.cput.factory;
 
 import org.junit.jupiter.api.Test;
 import za.ac.cput.entity.Department;
+import za.ac.cput.entity.Faculty;
 
 import static org.junit.jupiter.api.Assertions.*;
 /***
@@ -14,7 +15,8 @@ class DepartmentFactoryTest
     @Test
     void createDepartment ()
     {
-        Department department = DepartmentFactory.build(11,"Information Technology", "Information management");
+        Faculty faculty = FacultyFactory.build(12,"Informatics and Design", "Information and visual designing");
+        Department department = DepartmentFactory.build(11,"Information Technology", "Information management", faculty);
         assertNotNull(department);
     }
 }

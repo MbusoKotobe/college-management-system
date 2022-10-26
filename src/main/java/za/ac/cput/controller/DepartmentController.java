@@ -40,8 +40,8 @@ public class DepartmentController {
         Department ValidateDepartment;
         try
         {
-            ValidateDepartment = DepartmentFactory.build(department.getDeparmentId(), department.getDepartmentName(),
-                    department.getDepartmentDescription());
+            ValidateDepartment = DepartmentFactory.build(department.getDepartmentId(), department.getDepartmentName(),
+                    department.getDepartmentDescription(), department.getFaculty());
         }catch (IllegalArgumentException i)
         {
             log.info("Save error: ", i.getMessage());

@@ -1,6 +1,8 @@
 package za.ac.cput.factory;
 
 import za.ac.cput.entity.Department;
+import za.ac.cput.entity.Faculty;
+
 /***
  * DepartmentFactory.java
  * @author Elvis Ndlangamandla (213063964)
@@ -8,11 +10,12 @@ import za.ac.cput.entity.Department;
  */
 public class DepartmentFactory
 {
-    public static Department build(int departmentId, String departmentName, String departmentDescription)
+    public static Department build(int departmentId, String departmentName, String departmentDescription, Faculty faculty)
     {
-        return new Department.Builder().setDeparmentId(departmentId)
-                                       .setDepartmentName(departmentName)
-                                       .setDepartmentDescription(departmentDescription)
-                                       .build();
+        return Department.builder().departmentId(departmentId)
+                                   .departmentName(departmentName)
+                                   .departmentDescription(departmentDescription)
+                                   .faculty(faculty)
+                                   .build();
     }
 }

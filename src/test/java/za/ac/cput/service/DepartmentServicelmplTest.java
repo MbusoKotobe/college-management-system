@@ -4,7 +4,9 @@ import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import za.ac.cput.entity.Department;
+import za.ac.cput.entity.Faculty;
 import za.ac.cput.factory.DepartmentFactory;
+import za.ac.cput.factory.FacultyFactory;
 
 import java.util.List;
 import java.util.Optional;
@@ -27,7 +29,9 @@ class DepartmentServicelmplTest {
     @BeforeEach
     void setUp()
     {
-        department = DepartmentFactory.build(1,"Computer Science", "Computer Science");
+
+        Faculty faculty = FacultyFactory.build(12,"Informatics and Design", "Information and visual designing");
+        department = DepartmentFactory.build(1,"Computer Science", "Computer Science", faculty);
     }
 
     @Order(1)
@@ -74,7 +78,7 @@ class DepartmentServicelmplTest {
         Optional<Department> result = null;
 
         service.deleteById(departmentId);
-        result = service.read(department.getDeparmentId());
+        result = service.read(department.getDepartmentId());
 
         assertFalse(result.isPresent());
     }
@@ -88,7 +92,7 @@ class DepartmentServicelmplTest {
 
         service.delete(department);
 
-        result = service.read(department.getDeparmentId());
+        result = service.read(department.getDepartmentId());
         assertFalse(result.isPresent());
 
     }

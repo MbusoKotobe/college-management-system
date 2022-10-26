@@ -8,15 +8,16 @@ import static org.junit.jupiter.api.Assertions.*;
 class LecturerFactoryTest {
     @Test
     public void add(){
-        Lecturer l = new Lecturer.Builder().setLectureId(12252258).setFirstName("Arinze")
-                .setLastName("Anikue").build();
+        Lecturer l = Lecturer.builder().lecturerId(12252258).firstName("Arinze")
+                .lastName("Anikue").build();
         assertNotNull(l);
     }
     @Test
     public void copy(){
-        Lecturer l = new Lecturer.Builder().setLectureId(12252258).setFirstName("Arinze")
-                .setLastName("Anikue").build();
-        Lecturer l2 = new Lecturer.Builder().copy(l).build();
+        Lecturer l = Lecturer.builder().lecturerId(12252258).firstName("Arinze")
+                .lastName("Anikue").build();
+        Lecturer l2 = Lecturer.builder().lecturerId(12252258).firstName("Arinze")
+                .lastName("Anikue").build();
         assertEquals(l.getFirstName(), l2.getFirstName());
     }
 }
