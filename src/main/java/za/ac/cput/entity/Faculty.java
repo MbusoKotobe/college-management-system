@@ -3,7 +3,9 @@ package za.ac.cput.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.Objects;
+import java.util.Set;
 
 /***
  * Faculty.java
@@ -21,6 +23,9 @@ public class Faculty
     private String facultyName;
 
     private String facultyDescription;
+
+    @OneToMany
+    private Set<Faculty> faculties;
 
     protected Faculty(){ }
 

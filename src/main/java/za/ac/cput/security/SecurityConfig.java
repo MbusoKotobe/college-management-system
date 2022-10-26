@@ -60,6 +60,19 @@ public class SecurityConfig {
                .build()
         );
 
+        manager.createUser(User.withUsername("department-user")
+                .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f300"))
+                .roles("USER")
+
+                .build()
+        );
+
+        manager.createUser(User.withUsername("department-admin")
+                .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f301"))
+                .roles("USER", "DEPARTMENT-ADMIN")
+                .build()
+        );
+
         manager.createUser(User.withUsername("course-user")
                 .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f296"))
                 .roles("USER")
@@ -83,6 +96,7 @@ public class SecurityConfig {
                 .roles("USER", "MODULE-ADMIN")
                 .build()
         );
+
         return manager;
     }
     
@@ -113,14 +127,22 @@ public class SecurityConfig {
             .antMatchers(HttpMethod.GET, "/**/faculty/read").hasAnyRole("USER", "FACULTY-ADMIN")
             .antMatchers(HttpMethod.GET, "/**/faculty/find-all").hasAnyRole("USER", "FACULTY-ADMIN")
 
+
+            .antMatchers(HttpMethod.POST, "/**/department/save").hasRole("DEPARTMENT-ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/department/delete").hasRole("DEPARTMENT-ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/department/delete/{departmentId}").hasRole("DEPARTMENT-ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/department/read").hasAnyRole("USER", "DEPARTMENT-ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/department/find-all").hasAnyRole("USER", "DEPARTMENT-ADMIN")
+
             //Add your Path Matchers for your domains here and put a comment in place to signal
             //to other team members that your code begins here.
 
              //URl Path Matchers for the Student Domain endPoint
-            .antMatchers(HttpMethod.POST, "/**/student/save").hasAnyRole("STUDENT-ADMIN")
-            .antMatchers(HttpMethod.DELETE, "/**/student/delete/{id}").hasAnyRole("STUDENT-ADMIN")
+            .antMatchers(HttpMethod.POST, "/**/student/save").hasRole("STUDENT-ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/student/delete/{id}").hasRole("STUDENT-ADMIN")
             .antMatchers(HttpMethod.GET, "/**/student/read").hasAnyRole("USER", "STUDENT-ADMIN")
             .antMatchers(HttpMethod.GET, "/**/student/find-all").hasAnyRole("USER", "STUDENT-ADMIN")
+
 
              //URL Path Matchers for the Course Domain endPoint
             .antMatchers(HttpMethod.POST, "/**/course/save").hasAnyRole("COURSE-ADMIN")
