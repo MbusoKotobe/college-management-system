@@ -19,22 +19,29 @@ public class SecurityConfig {
 
 
     @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder()
-    {
+    public BCryptPasswordEncoder bCryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
     }
 
     @Bean
-    public UserDetailsService userDetailsService(BCryptPasswordEncoder bCryptPasswordEncoder)
-    {
+    public UserDetailsService userDetailsService(BCryptPasswordEncoder bCryptPasswordEncoder) {
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
         manager.createUser(User.withUsername("faculty-user")
-               .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f292"))
-               .roles("USER")
-               .build()
+                .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f292"))
+                .roles("USER")
+                .build()
         );
-
         manager.createUser(User.withUsername("faculty-admin")
+
+                .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f293"))
+                .roles("USER", "FACULTY-ADMIN")
+                .build()
+        );
+        manager.createUser(User.withUsername("lecturer-admin")
+                .password(bCryptPasswordEncoder.encode("5678"))
+                .roles("USER", "LECTURER-ADMIN")
+                .build()
+
                .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f293"))
                .roles("USER", "FACULTY-ADMIN")
                .build()
@@ -52,7 +59,6 @@ public class SecurityConfig {
                .roles("USER", "STUDENT-ADMIN")
                .build()
         );
-
 
         manager.createUser(User.withUsername("course-user")
                 .password(bCryptPasswordEncoder.encode("721087c4-0ede-407e-8c1f-ac57e531f296"))
@@ -77,10 +83,9 @@ public class SecurityConfig {
                 .roles("USER", "MODULE-ADMIN")
                 .build()
         );
-
         return manager;
     }
-
+    
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception
     {
@@ -88,11 +93,26 @@ public class SecurityConfig {
             .and().csrf().disable().formLogin().disable()
             //URL Path Matchers for the Faculty Domain.
             .authorizeRequests()
+
+            .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("FACULTY-ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/faculty/delete").hasRole("FACULTY-ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/faculty/delete/{facultyId}").hasRole("ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/faculty/read").hasAnyRole("USER", "ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/faculty/find-all").hasAnyRole("USER", "ADMIN")
+            
+            //URL Path Matchers for the Lecturer Domain.
+            .antMatchers(HttpMethod.POST, "/**/lecturer/save").hasRole("ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/lecturer/delete").hasRole("ADMIN")
+            .antMatchers(HttpMethod.DELETE, "/**/lecturer/delete/{lecturerId}").hasRole("ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/lecturer/read").hasAnyRole("USER", "ADMIN")
+            .antMatchers(HttpMethod.GET, "/**/lecturer/find-all").hasAnyRole("USER", "ADMIN")
+
             .antMatchers(HttpMethod.POST, "/**/faculty/save").hasRole("FACULTY-ADMIN")
             .antMatchers(HttpMethod.DELETE, "/**/faculty/delete").hasRole("FACULTY-ADMIN")
             .antMatchers(HttpMethod.DELETE, "/**/faculty/delete/{facultyId}").hasRole("FACULTY-ADMIN")
             .antMatchers(HttpMethod.GET, "/**/faculty/read").hasAnyRole("USER", "FACULTY-ADMIN")
             .antMatchers(HttpMethod.GET, "/**/faculty/find-all").hasAnyRole("USER", "FACULTY-ADMIN")
+
             //Add your Path Matchers for your domains here and put a comment in place to signal
             //to other team members that your code begins here.
 
