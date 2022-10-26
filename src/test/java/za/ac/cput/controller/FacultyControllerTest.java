@@ -33,9 +33,9 @@ public class FacultyControllerTest {
     @Autowired
     private TestRestTemplate restTemplate;
 
-    public static String ADMIN_SECURITY_USERNAME = "admin";
+    public static String ADMIN_SECURITY_USERNAME = "faculty-admin";
     public static String ADMIN_SECURITY_PASSWORD = "721087c4-0ede-407e-8c1f-ac57e531f293";
-    public static String USER_SECURITY_USERNAME = "user";
+    public static String USER_SECURITY_USERNAME = "lecturer-admin";
     public static String USER_SECURITY_PASSWORD = "721087c4-0ede-407e-8c1f-ac57e531f292";
 
     @BeforeEach

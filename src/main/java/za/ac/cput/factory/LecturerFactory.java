@@ -11,9 +11,10 @@ import za.ac.cput.entity.Lecturer;
 import za.ac.cput.utility.Utilities;
 
 public class LecturerFactory {
-    public static Lecturer createLecturer(long lecturerId, String firstName, String lastName){
+    public static Lecturer createLecturer(long lecturerId, String firstName, String middleName, String lastName){
         return new Lecturer.Builder().setLectureId(lecturerId)
                 .setFirstName(firstName)
+                .setMiddleName(middleName)
                 .setLastName(lastName)
                 .build();
     }
