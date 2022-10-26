@@ -15,9 +15,8 @@ import za.ac.cput.utility.Utilities;
 
             public static Module createModule (String moduleId, String moduleName,String moduleDescription)
             {
-                String ModuleId = Utilities.generateId();
 
-                Module module = new Module.Builder().setModuleId(ModuleId)
+                Module module = new Module.Builder().setModuleId(moduleId)
                         .setModuleName(moduleName)
                         .setModuleDescription(moduleDescription)
                         .build();
