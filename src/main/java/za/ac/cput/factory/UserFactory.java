@@ -5,7 +5,7 @@ import za.ac.cput.entity.User;
 import za.ac.cput.utility.Utilities;
 
 public class UserFactory {
-    public static User build(String userId, String username, String password, String userType)
+    public static User build(String userId, String username, String password, String userType, String usernameErrorMessage, String passwordErrorMessae)
     {
         Utilities.checkStringParam("userId", userId);
         Utilities.checkStringParam("username", username);
@@ -14,6 +14,8 @@ public class UserFactory {
         return User.builder().userId(userId)
                       .username(username)
                       .password(password)
-                      .userType(userType).build();
+                      .userType(userType)
+                      .usernameErrorMessage(usernameErrorMessage)
+                      .passwordErrorMessage(passwordErrorMessae).build();
     }
 }

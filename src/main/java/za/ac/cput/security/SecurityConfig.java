@@ -19,7 +19,7 @@ public class SecurityConfig {
 
 
     @Bean
-    public BCryptPasswordEncoder bCryptPasswordEncoder()
+    public static BCryptPasswordEncoder bCryptPasswordEncoder()
     {
         return new BCryptPasswordEncoder();
     }
@@ -71,7 +71,11 @@ public class SecurityConfig {
             //Add your Path Matchers for your domains here and put a comment in place to signal
             //to other team members that your code begins here.
 
-             //URl Path Matchers for the Student Domain endPoint
+            //URL Path Matchers for the Login Domain EndPoint
+            .antMatchers(HttpMethod.POST, "/**/user/login").anonymous()
+            .antMatchers(HttpMethod.POST, "/**/user/signup").anonymous()
+
+             //URL Path Matchers for the Student Domain EndPoint
             .antMatchers(HttpMethod.POST, "/**/student/save").hasAnyRole("STUDENT-ADMIN")
             .antMatchers(HttpMethod.DELETE, "/**/student/delete/{id}").hasAnyRole("STUDENT-ADMIN")
             .antMatchers(HttpMethod.GET, "/**/student/read").hasAnyRole("USER", "STUDENT-ADMIN")

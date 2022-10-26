@@ -32,7 +32,6 @@ public class UserController {
         this.service = service;
     }
 
-    @PostMapping("save")
     public ResponseEntity<User> save(@RequestBody User user)
     {
         User userReturned = null;
@@ -41,7 +40,9 @@ public class UserController {
                     user.getUserId(),
                     user.getUsername(),
                     user.getPassword(),
-                    user.getUserType()
+                    user.getUserType(),
+                    "",
+                    ""
             ));
         }
         catch(IllegalArgumentException exception)
@@ -52,7 +53,6 @@ public class UserController {
         return ResponseEntity.ok(userReturned);
     }
 
-    @GetMapping("read/{userId}")
     public ResponseEntity<User> read(@PathVariable String userId)
     {
         User userReturned = service.read(userId)
@@ -60,23 +60,36 @@ public class UserController {
         return ResponseEntity.ok(userReturned);
     }
 
-    @GetMapping("find-all")
-    public ResponseEntity<List<User>> findAll()
+    @PostMapping("login")
+    public ResponseEntity<User> login(User user)
     {
-        return ResponseEntity.ok(service.findAll());
+        User userAuthResults = null;
+        try{
+            userAuthResults = service.login(user);
+        }
+        catch(IllegalArgumentException exception)
+        {
+            log.info("User login: {}", exception);
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+        }
+
+        if(userAuthResults == null) throw new ResponseStatusException(HttpStatus.UNAUTHORIZED);
+        else return ResponseEntity.ok(userAuthResults);
     }
 
-    @DeleteMapping("delete/{userId}")
-    public ResponseEntity<Void> deleteById(@PathVariable String userId)
+    @PostMapping("signup")
+    public ResponseEntity<User> signup(User user)
     {
-        service.deleteById(userId);
-        return ResponseEntity.noContent().build();
+        User userReturned = null;
+        try{
+            userReturned = service.signup(user);
+        }
+        catch(IllegalArgumentException exception)
+        {
+            log.info("User Login: {}", exception);
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+        }
+        return ResponseEntity.ok(userReturned);
     }
 
-    @DeleteMapping("delete")
-    public ResponseEntity<Void> delete(@RequestBody User user)
-    {
-        service.delete(user);
-        return ResponseEntity.noContent().build();
-    }
 }
