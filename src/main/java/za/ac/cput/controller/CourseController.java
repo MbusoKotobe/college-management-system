@@ -1,3 +1,8 @@
+/* Course.java
+Entity for the Course
+Author: Jody Kearns (209023651)
+Date: 10 October 2022 */
+
 package za.ac.cput.controller;
 
 import lombok.extern.slf4j.Slf4j;
