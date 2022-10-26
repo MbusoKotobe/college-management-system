@@ -2,6 +2,7 @@ package za.ac.cput.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
+import org.springframework.stereotype.Service;
 import za.ac.cput.entity.Department;
 
 import za.ac.cput.repository.IDepartmentRepository;
@@ -15,7 +16,7 @@ import java.util.Optional;
  * @author Elvis Ndlangamandla (213063964)
  * Date: 21 August 2022
  */
-
+@Service
 public class DepartmentServicelmpl implements IDepartmentService{
     private final IDepartmentRepository repository;
 

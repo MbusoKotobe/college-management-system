@@ -5,7 +5,7 @@ import za.ac.cput.entity.Department;
 
 import static org.junit.jupiter.api.Assertions.*;
 /***
- * Department.java
+ * Department Factory Test.java
  * @author Elvis Ndlangamandla (213063964)
  * Date: 21 August 2022
  */

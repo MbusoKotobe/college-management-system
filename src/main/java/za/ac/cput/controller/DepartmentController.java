@@ -22,6 +22,7 @@ import java.util.List;
 @RequestMapping("college-management-system/department/")
 @Slf4j
 public class DepartmentController {
+
     private final IDepartmentService departmentService;
 
     @Autowired
@@ -63,6 +64,7 @@ public class DepartmentController {
 
 
     @GetMapping("find-all")
+    @CrossOrigin(origins = "http://localhost:56734")
     public ResponseEntity<List<Department>> findAll()
     {
         List<Department> departmentLists = this.departmentService.findAll();
