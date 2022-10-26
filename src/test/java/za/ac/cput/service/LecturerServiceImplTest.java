@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class LecturerServiceImplTest {
 
     private final Lecturer lecturer = LecturerFactory
-            .createLecturer(1,"Kruben", "Naidoo");
+            .createLecturer(1,"Kruben", "", "Naidoo");
 
     @Autowired
     private ILecturerService service;

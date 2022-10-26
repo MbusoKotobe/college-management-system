@@ -31,7 +31,6 @@ public class FacultyController {
     {
         this.service = service;
     }
-
     @PostMapping("save")
     public ResponseEntity<Faculty> save(@RequestBody Faculty faculty)
     {
