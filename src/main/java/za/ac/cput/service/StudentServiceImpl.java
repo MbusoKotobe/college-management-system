@@ -1,4 +1,4 @@
-package za.ac.cput.service.studentService.impl;
+package za.ac.cput.service;
 
 /*
 author: Ameer Ismail
@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import za.ac.cput.entity.Student;
 import za.ac.cput.repository.IStudentRepository;
-import za.ac.cput.service.studentService.IStudentService;
+import za.ac.cput.service.IStudentService;
 
 import java.util.List;
 import java.util.Optional;

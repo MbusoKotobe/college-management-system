@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import za.ac.cput.entity.Student;
 import za.ac.cput.factory.StudentFactory;
-import za.ac.cput.service.studentService.IStudentService;
+import za.ac.cput.service.IStudentService;
 
 import java.util.List;
 

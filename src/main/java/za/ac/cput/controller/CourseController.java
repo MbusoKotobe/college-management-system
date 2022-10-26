@@ -12,7 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import za.ac.cput.entity.Course;
-import za.ac.cput.service.courseService.ICourseService;
+import za.ac.cput.service.ICourseService;
 
 import java.util.List;
 

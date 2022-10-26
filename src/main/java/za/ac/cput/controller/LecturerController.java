@@ -46,22 +46,26 @@ public class LecturerController {
         }
         return ResponseEntity.ok(lecturerReturned);
     }
+
     @GetMapping("read/{lecturerId}")
     public ResponseEntity<Lecturer> read(@PathVariable long lecturerId) {
         Lecturer lecturerReturned = service.read(lecturerId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
         return ResponseEntity.ok(lecturerReturned);
     }
+
     @GetMapping("find-all")
     public ResponseEntity<List<Lecturer>> findAll(){
         List<Lecturer> lecturers = service.findAll();
         return new ResponseEntity<>(lecturers, HttpStatus.OK);
     }
+
     @DeleteMapping("delete/{id}")
     public ResponseEntity<Void> deleteById(@PathVariable("id") long id){
         service.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
     @DeleteMapping("delete")
     public ResponseEntity<Void> delete(@RequestBody Lecturer lecturer)
     {

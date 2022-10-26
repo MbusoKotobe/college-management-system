@@ -3,13 +3,13 @@ ServiceImpl for the Course
 Author: Jody Kearns (209023651)
 Date: 10 October 2022 */
 
-package za.ac.cput.service.courseService.impl;
+package za.ac.cput.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import za.ac.cput.entity.Course;
 import za.ac.cput.repository.ICourseRepository;
-import za.ac.cput.service.courseService.ICourseService;
+import za.ac.cput.service.ICourseService;
 import za.ac.cput.factory.CourseFactory;
 import java.util.List;
 import java.util.Optional;

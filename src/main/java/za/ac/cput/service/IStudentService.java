@@ -1,4 +1,4 @@
-package za.ac.cput.service.studentService;
+package za.ac.cput.service;
 
 /*
 author: Ameer Ismail

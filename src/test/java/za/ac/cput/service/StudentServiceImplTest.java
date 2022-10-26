@@ -6,9 +6,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.lang.Nullable;
 import za.ac.cput.entity.Student;
 import za.ac.cput.factory.StudentFactory;
-import za.ac.cput.service.studentService.IStudentService;
 
-import javax.xml.bind.ValidationException;
 import java.util.List;
 import java.util.Optional;
 
