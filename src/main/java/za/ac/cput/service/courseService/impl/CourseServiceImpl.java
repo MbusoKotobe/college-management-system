@@ -1,3 +1,8 @@
+/* CourseServiceImpl.java
+ServiceImpl for the Course
+Author: Jody Kearns (209023651)
+Date: 10 October 2022 */
+
 package za.ac.cput.service.courseService.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;

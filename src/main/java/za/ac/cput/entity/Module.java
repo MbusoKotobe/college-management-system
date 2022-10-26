@@ -6,6 +6,7 @@ package za.ac.cput.entity;
  * Date: 08 April 2022
  */
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
@@ -17,6 +18,7 @@ import java.util.Set;
 @Builder
 @EqualsAndHashCode
 @Entity
+@NoArgsConstructor
 @Table(name = "MODULE_TABLE")
 public class Module {
     @Id
@@ -24,10 +26,4 @@ public class Module {
 
     private String moduleName;
     private String moduleDescription;
-
-    @ManyToMany(mappedBy = "modules", fetch = FetchType.LAZY)
-    private Set<Course> courses;
-
-    protected Module() {
-    }
 }
